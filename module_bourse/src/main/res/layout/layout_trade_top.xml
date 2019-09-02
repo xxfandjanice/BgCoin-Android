@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableEnd="@drawable/icon_arrow_down_gray"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/cl_333333"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/shape_rec_red"
+            android:drawableEnd="@mipmap/icon_candle"
+            android:drawablePadding="3dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <View style="@style/style_gray_line" />
+
+    <LinearLayout
+        android:baselineAligned="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:paddingStart="15dp"
+            android:paddingTop="12dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_tab_buy_in"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sel_buy_in"
+                    android:gravity="center"
+                    android:text="@string/buy_in"
+                    android:textColor="@drawable/sel_buy_in_tv"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_tab_sell_out"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sel_sell_out"
+                    android:gravity="center"
+                    android:text="@string/sell_out"
+                    android:textColor="@drawable/sel_sell_out_tv"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_pop"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_rectangle_line_radius_gray"
+                android:drawableEnd="@drawable/icon_arrow_down_gray"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp"
+                android:text="@string/limit_price_order"
+                android:textColor="@color/cl_333333"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_market_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape_rectangle_line_radius_gray_bg"
+                        android:gravity="center"
+                        android:text="@string/market_order_tip"
+                        android:textColor="@color/cl_999999"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_input_limit_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape_rectangle_line_radius_gray"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_limit_decrease"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="-"
+                            android:textColor="@color/tab_text_select" />
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/cl_d8d8d8" />
+
+                        <EditText
+                            android:id="@+id/et_limit_price"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/cl_333333"
+                            android:textSize="15sp" />
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/cl_d8d8d8" />
+
+                        <TextView
+                            android:id="@+id/tv_limit_increase"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="+"
+                            android:textColor="@color/tab_text_select" />
+
+                    </LinearLayout>
+                </FrameLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_valuation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/valuation"
+                    android:textColor="@color/cl_999999"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_rectangle_line_radius_gray"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_amount_decrease"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="@color/tab_text_select" />
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/cl_d8d8d8" />
+
+                    <EditText
+                        android:textColorHint="@color/cl_999999"
+                        android:id="@+id/et_amount"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="@string/amount_coin"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/cl_333333"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/cl_d8d8d8" />
+
+                    <TextView
+                        android:id="@+id/tv_amount_increase"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textColor="@color/tab_text_select" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_available_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/available_money"
+                    android:textColor="@color/cl_999999"
+                    android:textSize="11sp" />
+
+                <com.fmtch.module_bourse.widget.PercentNumberView
+                    android:id="@+id/percent_number_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="10dp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_btn_login_buy_sell"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_login_btn_blue"
+                android:gravity="center"
+                android:text="@string/login_register"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingStart="8dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="15dp">
+
+            <LinearLayout
+                android:paddingEnd="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_bracket"
+                    android:textColor="@color/cl_999999"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/num_bracket"
+                    android:textColor="@color/cl_999999"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:paddingEnd="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_buy_sell"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:src="@mipmap/icon_coin_coin_all" />
+
+                    <ImageView
+                        android:id="@+id/iv_buy"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:src="@mipmap/icon_coin_coin_buy" />
+
+                    <ImageView
+                        android:id="@+id/iv_sell"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:src="@mipmap/icon_coin_coin_sell" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:text="@string/my_pend_order"
+            android:textColor="@color/cl_999999"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_cancel_order"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:text="@string/revoke_all"
+            android:textColor="@color/theme"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

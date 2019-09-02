@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_common_bgEE"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolbarStyle">
+
+        <TextView
+            style="@style/ToolbarCenterTitle"
+            android:text="@string/mine_safe_center" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:id="@+id/civ_user_icon"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/tv_avatar"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/icon_arrow_right_gray"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical|right"
+                        android:text="@string/mine_upload_agian"
+                        android:textColor="@color/color_common_text99"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/Divider"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/MediumTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:text="@string/mine_user_name" />
+
+                    <TextView
+                        android:id="@+id/tv_user_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="15dp"
+                        android:drawableRight="@drawable/icon_arrow_right_gray"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical|right"
+                        android:textColor="@color/color_common_text99"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/Divider"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/MediumTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:text="@string/mine_bind_mobile" />
+
+                    <TextView
+                        android:id="@+id/tv_mobile"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="15dp"
+                        android:drawableRight="@drawable/icon_arrow_right_gray"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical|right"
+                        android:textColor="@color/color_common_text99"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/Divider"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/MediumTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:text="@string/mine_bind_email" />
+
+                    <TextView
+                        android:id="@+id/tv_email"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="15dp"
+                        android:drawableRight="@drawable/icon_arrow_right_gray"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical|right"
+                        android:textColor="@color/color_common_text99"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/Divider"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/MediumTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:text="@string/mine_real_auth" />
+
+                    <TextView
+                        android:id="@+id/tv_auth"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="15dp"
+                        android:drawableRight="@drawable/icon_arrow_right_gray"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical|right"
+                        android:textColor="@color/color_common_text99"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/MediumTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:text="@string/mine_login_pass_word" />
+
+                    <TextView
+                        android:id="@+id/tv_login_pwd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:padding="15dp"
+                        android:drawableRight="@drawable/icon_arrow_right_gray"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical|right"
+                        android:text="@string/mine_modify"
+                        android:textColor="@color/color_common_text99"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/Divider"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/MediumTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:text="@string/mine_assets_password" />
+
+                    <TextView
+                        android:id="@+id/tv_assets_pwd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:padding="15dp"
+                        android:drawableRight="@drawable/icon_arrow_right_gray"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical|right"
+                        android:textColor="@color/color_common_text99"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/Divider"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/MediumTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:text="@string/mine_assets_password_times" />
+
+                    <TextView
+                        android:id="@+id/tv_assets_pwd_times"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="15dp"
+                        android:drawableRight="@drawable/icon_arrow_right_gray"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical|right"
+                        android:textColor="@color/color_common_text99"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/Divider"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/MediumTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:text="@string/mine_gestures_password" />
+
+                    <TextView
+                        android:id="@+id/tv_gestures_pwd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/mine_un_open"
+                        android:padding="15dp"
+                        android:drawableRight="@drawable/icon_arrow_right_gray"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical|right"
+                        android:textColor="@color/color_common_text99"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/Divider"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/MediumTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:text="@string/mine_finger_password" />
+
+                    <TextView
+                        android:id="@+id/tv_finger_pwd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="15dp"
+                        android:text="@string/mine_un_open"
+                        android:drawableRight="@drawable/icon_arrow_right_gray"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical|right"
+                        android:textColor="@color/color_common_text99"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MediumTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="@string/mine_google_personal_check" />
+
+                <TextView
+                    android:id="@+id/tv_google_check"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:drawableRight="@drawable/icon_arrow_right_gray"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/color_common_text99"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

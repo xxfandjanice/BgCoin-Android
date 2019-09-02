@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_common_bgEE"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolbarStyle">
+
+        <TextView
+            style="@style/ToolbarCenterTitle"
+            android:text="@string/mine_trouble_feedback" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="30dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="30dp">
+
+
+        <EditText
+            android:id="@+id/et_advice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mine_shape_rectangle_line_gray"
+            android:gravity="start"
+            android:hint="@string/mine_advice_hint"
+            android:lineSpacingExtra="5dp"
+            android:maxLength="500"
+            android:minHeight="100dp"
+            android:padding="15dp"
+            android:textColor="@color/color_common_text44"
+            android:textColorHint="@color/color_common_text99"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="right"
+            android:text="0/500"
+            android:textColor="@color/color_common_text99"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_submit"
+        style="@style/mine_button_style"
+        android:layout_marginTop="87dp"
+        android:text="@string/submit" />
+
+</LinearLayout>

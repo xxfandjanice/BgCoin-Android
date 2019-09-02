@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    tools:showIn="@layout/fragment_home">
+
+    <TextView
+        android:id="@+id/tab_rise_fall"
+        style="@style/style_home_tab"
+        android:text="@string/rise_fall_list" />
+
+    <TextView
+        android:id="@+id/tab_transaction"
+        style="@style/style_home_tab"
+        android:text="@string/transaction_list" />
+
+    <TextView
+        android:id="@+id/tab_new_coin"
+        style="@style/style_home_tab"
+        android:text="@string/new_coin_list" />
+
+</LinearLayout>

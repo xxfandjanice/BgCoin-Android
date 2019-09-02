@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingEnd="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:text="美味的肥肉"
+            android:textColor="@color/cl_333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_attention"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/shape_rectangle_gray_enable"
+            android:gravity="center"
+            android:text="@string/has_attention"
+            android:textColor="@color/cl_999999"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <View
+        style="@style/style_gray_line"
+        android:layout_marginStart="@dimen/activity_horizontal_margin" />
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_shape"
+        android:orientation="vertical">
+
+        <View style="@style/Divider" />
+
+        <TextView
+            android:id="@+id/tv_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="14dp"
+            android:textSize="15sp"
+            android:background="@color/white"
+            android:textColor="@color/theme"
+            android:text="@string/mine_pay_pwd_type_every_times" />
+
+        <View style="@style/Divider" />
+
+        <TextView
+            android:id="@+id/tv_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="14dp"
+            android:textSize="15sp"
+            android:background="@color/white"
+            android:textColor="@color/color_common_text99"
+            android:text="@string/mine_pay_pwd_type_never" />
+
+        <View style="@style/Divider" />
+
+        <TextView
+            android:id="@+id/tv_third"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="14dp"
+            android:textSize="15sp"
+            android:background="@color/white"
+            android:textColor="@color/color_common_text99"
+            android:text="@string/mine_pay_pwd_type_two_hour_once" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_dialog_shape"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="14dp"
+            android:text="@string/cancel"
+            android:textColor="@color/color_common_text99"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

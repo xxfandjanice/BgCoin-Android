@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_common_bgEE"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolbarStyle">
+
+        <TextView
+            style="@style/ToolbarCenterTitle"
+            android:text="@string/mine_price_unit" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            style="@style/ToolbarRightText"
+            android:text="@string/mine_save"
+            android:textColor="@color/color_common_text33" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_rmb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:text="@string/mine_unit_rmb_"
+                android:textColor="@color/cl_212121"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/iv_rmb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/mine_ic_checked" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/Divider"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_usd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:text="@string/mine_unit_usd_"
+                android:textColor="@color/cl_212121"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/iv_usd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/mine_ic_unchecked" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

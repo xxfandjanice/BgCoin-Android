@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_common_bgEE"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolbarStyle">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/ToolbarCenterTitle" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tv_explain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mine_clfefcec"
+        android:padding="10dp"
+        android:text="@string/mine_modify_bind_mobile_explain"
+        android:textColor="@color/mine_clfa8006" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/mine_login_pass_word"
+                android:textColor="@color/color_common_text33"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_pwd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="@string/mine_input_login_pass_word"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:textColor="@color/color_common_text33"
+                android:textColorHint="@color/color_common_text99"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/Divider"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_et_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:text="@string/mine_login_phone_sms"
+                android:textColor="@color/color_common_text33"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/icon_down_gray"
+                android:drawablePadding="2dp"
+                android:padding="8dp"
+                android:text="+86"
+                android:textColor="@color/cl_212121"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_mobile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="@string/mine_login_phone_account"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColor="@color/color_common_text33"
+                android:textColorHint="@color/color_common_text99"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/mine_email"
+                android:textColor="@color/color_common_text33"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="@string/mine_login_email_account"
+                android:inputType="textEmailAddress"
+                android:padding="15dp"
+                android:textColor="@color/color_common_text33"
+                android:textColorHint="@color/color_common_text99"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/Divider"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/mine_login_verification_code_sms"
+                android:textColor="@color/color_common_text33"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="@string/mine_input_code"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColor="@color/color_common_text33"
+                android:textColorHint="@color/color_common_text99"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="21dp"
+                android:background="@color/cl_f2f2f2" />
+
+            <TextView
+                android:id="@+id/tv_get_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:maxWidth="120dp"
+                android:minWidth="75dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:text="@string/mine_login_get_verification_code_sms"
+                android:textColor="@color/theme" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        style="@style/mine_button_style"
+        android:layout_marginBottom="75dp"
+        android:text="@string/sure" />
+
+</LinearLayout>

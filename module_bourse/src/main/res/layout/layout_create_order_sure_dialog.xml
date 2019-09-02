@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_white_bg_shape"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/limit_order_buy_in"
+        android:textColor="@color/cl_333333"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/create_order_price"
+        android:textColor="@color/cl_333333"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/create_order_amount"
+        android:textColor="@color/cl_333333"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:id="@+id/tv_no_remind"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@mipmap/icon_unselected"
+        android:drawablePadding="8dp"
+        android:text="@string/no_more_remind"
+        android:textColor="@color/cl_999999"
+        android:textSize="10sp" />
+</LinearLayout>

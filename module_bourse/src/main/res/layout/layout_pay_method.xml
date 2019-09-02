@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sel_pay_method"
+            android:gravity="center"
+            android:text="@string/all"
+            android:textColor="@drawable/sel_market_tab_tv"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_bank"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/sel_pay_method"
+            android:gravity="center"
+            android:text="@string/bank_transfer"
+            android:textColor="@drawable/sel_market_tab_tv"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_wechat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sel_pay_method"
+            android:gravity="center"
+            android:text="@string/wechat"
+            android:textColor="@drawable/sel_market_tab_tv"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_zfb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/sel_pay_method"
+            android:gravity="center"
+            android:text="@string/zfb"
+            android:textColor="@drawable/sel_market_tab_tv"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

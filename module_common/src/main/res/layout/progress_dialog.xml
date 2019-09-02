@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:background="@drawable/bg_dialog_confirm"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:paddingBottom="20dp"
+              android:paddingLeft="50dp"
+              android:paddingRight="50dp"
+              android:paddingTop="20dp">
+
+    <com.fmtch.base.widget.MyProgressView
+        android:id="@+id/my_progress_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/gif_loading_new"/>
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:textSize="13dp"
+        android:textColor="#FFFFFFFF"/>
+
+</LinearLayout>

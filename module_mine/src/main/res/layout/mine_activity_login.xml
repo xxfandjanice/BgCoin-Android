@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_rapid_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="@string/mine_register"
+            android:textColor="@color/theme"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:padding="15dp"
+            android:src="@drawable/mine_icon_close" />
+
+    </FrameLayout>
+
+    <View style="@style/Divider" />
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/theme" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/mine_welcome"
+        android:textColor="@color/color_common_text33"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="@string/mine_welcome_explain"
+        android:textColor="@color/color_common_text99"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/et_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="15dp"
+        android:background="@null"
+        android:drawableLeft="@drawable/mine_ic_account"
+        android:drawablePadding="15dp"
+        android:hint="@string/mine_login_email_or_phone_account"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:singleLine="true"
+        android:textColor="@color/mine_color_item_text"
+        android:textColorHint="@color/color_common_text99"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/line_account"
+        style="@style/Divider"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableLeft="@drawable/mine_ic_password"
+            android:drawablePadding="15dp"
+            android:hint="@string/mine_input_login_pass_word"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColor="@color/mine_color_item_text"
+            android:textColorHint="@color/mine_color_gray"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/iv_pwd_eye"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="30dp"
+            android:src="@drawable/mine_ic_eye_close" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_password"
+        style="@style/Divider"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:id="@+id/tv_forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="@string/mine_login_forgot_pass_word_"
+            android:textColor="@color/theme"
+            android:textSize="14sp" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/mine_button_style"
+        android:layout_marginTop="20dp"
+        android:enabled="false"
+        android:text="@string/mine_login_now" />
+
+</LinearLayout>

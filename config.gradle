@@ -1,0 +1,102 @@
+ext {
+    android = [
+            compileSdkVersion: 28,
+            buildToolsVersion: "28.0.2",
+            applicationId    : "com.fmtch.bourse",
+            minSdkVersion    : 21,
+            targetSdkVersion : 28,
+            versionCode      : 1300,
+            versionName      : "1.3.1"
+    ]
+
+    //因为support库都是同一个版本，单独拎出来，方便修改
+    dependVersion = [
+            support           : "28.0.0",
+            constraint        : "1.1.3",
+
+            json              : "2.8.2",
+
+            rxjava2           : "2.2.2",
+            rx_android        : "2.1.0",
+            retrofit          : "2.4.0",
+            okhttpVersion     : "3.9.0",
+
+            interceptor       : "3.4.1",
+
+            BaseQuickAdapter  : "2.9.42",
+//            zxing                   : "3.3.0",
+            zxing             : "2.2",
+
+            Picasso           : "2.5.2",
+            Glide             : "3.7.0",
+
+            bufferknife       : "9.0.0-rc2",
+            eventbus          : "3.1.1",
+
+            arouter_compiler  : "1.2.1",
+            arouter_api       : "1.4.0",
+
+            multidex          : "1.0.2",
+
+            smartRefreshLayout: "1.1.0-alpha-26",
+
+            nicorn           : "+"
+    ]
+
+    dependencies = [
+            // android-support
+            "support-v4"          : "com.android.support:support-v4:${dependVersion.support}",
+            "appcompat-v7"        : "com.android.support:appcompat-v7:${dependVersion.support}",
+            "design"              : "com.android.support:design:${dependVersion.support}",
+            "recyclerview"        : "com.android.support:recyclerview-v7:${dependVersion.support}",
+            "cardview"            : "com.android.support:cardview-v7:${dependVersion.support}",
+
+            "constraint-layout"   : "com.android.support.constraint:constraint-layout:${dependVersion.constraint}",
+
+            //json
+            "json"                : "com.google.code.gson:gson:${dependVersion.json}",
+
+            //rxjava2
+            "rxjava2"             : "io.reactivex.rxjava2:rxjava:${dependVersion.rxjava2}",
+            "rx_android"          : "io.reactivex.rxjava2:rxandroid:${dependVersion.rx_android}",
+
+            //okHttp的log信息
+            "logging-interceptor" : "com.squareup.okhttp3:logging-interceptor:${dependVersion.interceptor}",
+
+            //retrofit
+            "retrofit"            : "com.squareup.retrofit2:retrofit:${dependVersion.retrofit}",
+            "adapter-rxjava2"     : "com.squareup.retrofit2:adapter-rxjava2:${dependVersion.retrofit}",
+            "convert-json"        : "com.squareup.retrofit2:converter-gson:${dependVersion.retrofit}",
+            "convert-jackson"     : "com.squareup.retrofit2:converter-jackson:${dependVersion.retrofit}",
+            "okHttp"              : "com.squareup.okhttp3:okhttp:${dependVersion.okhttpVersion}",
+
+            //buffer knife
+            "bufferknife"         : "com.jakewharton:butterknife:${dependVersion.bufferknife}",
+            "butterknife-compiler": "com.jakewharton:butterknife-compiler:${dependVersion.bufferknife}",
+
+            //ARouter
+            "arouter_api"         : "com.alibaba:arouter-api:${dependVersion.arouter_api}",
+            "arouter_compiler"    : "com.alibaba:arouter-compiler:${dependVersion.arouter_compiler}",
+
+            //BaseQuickAdapterHelper
+            "BaseQuickAdapter"    : "com.github.CymChad:BaseRecyclerViewAdapterHelper:${dependVersion.BaseQuickAdapter}",
+
+            //zxing
+//            "zxing"                 : "com.google.zxing:core:${dependVersion.zxing}",
+            "zxing"               : "cn.yipianfengye.android:zxing-library:${dependVersion.zxing}",
+
+            //multidex
+            "multidex"            : "com.android.support:multidex:${dependVersion.multidex}",
+
+            //Picasso
+            "Picasso"             : "com.squareup.picasso:picasso:${dependVersion.Picasso}",
+            "Glide"             : "com.github.bumptech.glide:glide:${dependVersion.Glide}",
+            "eventbus"            : "org.greenrobot:eventbus:${dependVersion.eventbus}",
+
+            //下拉刷新、上拉加载
+            "SmartRefreshLayout"  : "com.scwang.smartrefresh:SmartRefreshLayout:${dependVersion.smartRefreshLayout}",
+            "SmartRefreshHeader"  : "com.scwang.smartrefresh:SmartRefreshHeader:${dependVersion.smartRefreshLayout}",
+
+            "Unicorn"             : "com.qiyukf.unicorn:unicorn:${dependVersion.nicorn}",
+    ]
+}

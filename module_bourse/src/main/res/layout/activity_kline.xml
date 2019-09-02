@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/k_line_bg_top"
+    android:orientation="vertical"
+    tools:context=".ui.home.activity.KLineActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolbarStyle"
+        android:background="@color/k_line_bg_top">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/ToolbarCenterTitle"
+            android:textColor="@color/k_line_title_color" />
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:paddingStart="7dp"
+            android:paddingEnd="@dimen/activity_horizontal_margin"
+            android:src="@mipmap/icon_k_line_share"
+            android:text="@string/coin_kind"
+            android:tint="@color/k_line_icon_color" />
+
+        <ImageView
+            android:id="@+id/iv_fullscreen"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:paddingStart="7dp"
+            android:paddingEnd="7dp"
+            android:src="@mipmap/icon_k_line_fullsreen"
+            android:text="@string/coin_kind"
+            android:tint="@color/k_line_icon_color" />
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:paddingStart="15dp"
+            android:paddingEnd="7dp"
+            android:src="@mipmap/icon_k_line_add"
+            android:tint="@color/k_line_icon_color" />
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        style="@style/style_gray_line"
+        android:background="@color/k_line_divider_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordinator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="65dp">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/k_line_bg_top"
+                android:orientation="vertical"
+                app:elevation="0dp">
+
+                <LinearLayout
+                    android:background="@color/k_line_bg_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_scrollFlags="scroll">
+
+                    <LinearLayout
+                        android:background="@color/k_line_bg_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tv_close"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/cl_f55758"
+                                    android:textSize="22sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_rate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="9dp"
+                                    android:textColor="@color/cl_f55758"
+                                    android:textSize="15sp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_transform_coin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:textColor="@color/cl_999999"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="2"
+                            android:gravity="end"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/high_24h"
+                                    android:textColor="@color/cl_999999"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_high"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginStart="15dp"
+                                    android:gravity="end"
+                                    android:textColor="@color/k_line_trade_color"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/low_24h"
+                                    android:textColor="@color/cl_999999"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_low"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="15dp"
+                                    android:gravity="end"
+                                    android:textColor="@color/k_line_trade_color"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/trade_amounts_24"
+                                    android:textColor="@color/cl_999999"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_trade_amount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="15dp"
+                                    android:gravity="end"
+                                    android:textColor="@color/k_line_trade_color"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                        android:background="@color/k_line_divider_line2" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_tab_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/k_line_bg_top"
+                        android:orientation="horizontal">
+
+                        <com.flyco.tablayout.CommonTabLayout
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/tab_time"
+                            app:tl_iconVisible="false"
+                            android:layout_marginStart="5dp"
+                            app:tl_indicator_bounce_enable="false"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_height="30dp"
+                            android:background="@color/k_line_bg_top"
+                            app:tl_textUnselectColor="@color/k_line_tab_unselected_color"
+                            tl:tl_indicator_color="@color/theme"
+                            tl:tl_indicator_corner_radius="1.5dp"
+                            tl:tl_indicator_height="3dp"
+                            tl:tl_indicator_width="22dp"
+                            tl:tl_textSelectColor="@color/k_line_tab_selected_color"
+                            tl:tl_textsize="13sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_k_line_set"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingStart="@dimen/activity_horizontal_margin"
+                            android:paddingEnd="@dimen/activity_horizontal_margin"
+                            android:src="@mipmap/icon_k_line_set" />
+                    </LinearLayout>
+
+
+                    <com.icechao.klinelib.view.KLineChartView
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/kLineView"
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        android:background="@color/k_line_bg_content"
+                        app:backgroundColor="#555555"
+                        app:selectInfoBoxBackgroundColor="@color/k_line_bg_content"
+                        app:backgroundFillAlpha="55"
+                        app:backgroundFillBottomColor="#666666"
+                        app:backgroundFillTopLolor="@color/k_line_bg_content" />
+                </LinearLayout>
+
+                <com.flyco.tablayout.SlidingTabLayout
+                    android:id="@+id/tab_below"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/k_line_bg_content"
+                    app:tl_textUnselectColor="@color/k_line_tab_unselected_color"
+                    tl:tl_indicator_color="@color/theme"
+                    tl:tl_indicator_corner_radius="1.5dp"
+                    tl:tl_indicator_height="3dp"
+                    app:tl_indicator_width_equal_title="true"
+                    tl:tl_tab_space_equal="true"
+                    tl:tl_textSelectColor="@color/k_line_tab_selected_color"
+                    tl:tl_textsize="16sp" />
+
+                <View
+                    style="@style/style_gray_line"
+                    android:background="@color/k_line_divider_line" />
+            </android.support.design.widget.AppBarLayout>
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </android.support.design.widget.CoordinatorLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/k_line_bg_top"
+            android:orientation="horizontal"
+            android:paddingStart="12dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/tv_buy_in"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/cl_00C1A3"
+                android:gravity="center"
+                android:text="@string/buy_in"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_sell_out"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@color/cl_FF3662"
+                android:gravity="center"
+                android:text="@string/sell_out"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

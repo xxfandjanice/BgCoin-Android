@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#F7F7F7</color>
+    <color name="FF959FAD">#FF959FAD</color>
+
+    <color name="cl_f2f2f2">#f2f2f2</color>
+    <color name="btn_blue_stoke_line">#14010101</color>
+    <color name="btn_gray_stoke_line">#14050505</color>
+    <color name="cl_d8d8dd">#D8D8DD</color>
+    <color name="cl_d8d8d8">#D8D8D8</color>
+    <color name="tab_text_select">#007AFF</color>
+    <color name="cl_f7f7f7">#f7f7f7</color>
+    <color name="cl_d7d7d7">#d7d7d7</color>
+    <color name="cl_00b2ff">#00B2FF</color>
+    <color name="tab_text_unselect">#959FAD</color>
+    <color name="cl_212121">#212121</color>
+    <color name="cl_41c196">#41C196</color>
+    <color name="cl_b0aeaf">#B0AEAF</color>
+    <color name="cl_e8e9ea">#E8E9EA</color>
+    <color name="cl_01c700">#01C700</color>
+    <color name="cl_fa8006">#FA8006</color>
+    <color name="cl_fefcec">#FEFCEC</color>
+    <color name="cl_cbd2da">#CBD2DA</color>
+    <color name="cl_4dffffff">#4dffffff</color>
+    <color name="cl_03c087">#03C087</color>
+    <color name="cl_f55758">#F55758</color>
+    <color name="cl_3303c087">#3303C087</color>
+    <color name="cl_33f55758">#33F55758</color>
+    <color name="cl_f8f6f7">#F8F6F7</color>
+    <color name="cl_ebedf9">#EBEDF9</color>
+    <color name="cl_959fad">#959FAD</color>
+    <color name="cl_c4c8d0">#C4C8D0</color>
+    <color name="cl_66000000">#66000000</color>
+    <color name="cl_fff7f6f9">#FFF7F6F9</color>
+    <color name="cl_ffb0aeaf">#FFB0AEAF</color>
+    <color name="cl_999999">#999999</color>
+    <color name="cl_333333">#333333</color>
+    <color name="cl_f7f7fb">#F7F7FB</color>
+    <color name="cl_444444">#444444</color>
+    <color name="cl_4cb472">#4CB472</color>
+    <color name="cl_E86460">#E86460</color>
+    <color name="cl_f15659">#F15659</color>
+    <color name="cl_eaeaea">#eaeaea</color>
+    <color name="cl_81838e">#81838E</color>
+    <color name="cl_f3f4f7">#F3F4F7</color>
+    <color name="cl_e5f1ff">#E5F1FF</color>
+    <color name="cl_f0f0f0">#F0F0F0</color>
+    <color name="cl_88787879">#88787879</color>
+    <color name="cl_258BFF">#258BFF</color>
+    <color name="cl_666666">#666666</color>
+    <color name="cl_EFFFFFFF">#EFFFFFFF</color>
+    <color name="cl_2D3341">#2D3341</color>
+    <color name="cl_F5A623">#F5A623</color>
+    <color name="cl_C6C6C6">#C6C6C6</color>
+    <color name="cl_A6A6A6">#A6A6A6</color>
+    <color name="cl_E2E2E2">#E2E2E2</color>
+    <color name="cl_14010101">#14010101</color>
+    <color name="cl_00C1A3">#00C1A3</color>
+    <color name="cl_FF3662">#FF3662</color>
+    <color name="cl_2F344F">#2F344F</color>
+
+
+    <color name="k_line_bg_top">@color/white</color>
+    <color name="k_line_bg_content">@color/white</color>
+    <color name="k_line_icon_color">@color/cl_333333</color>
+    <color name="k_line_title_color">@color/cl_333333</color>
+    <color name="k_line_trade_color">@color/cl_333333</color>
+    <color name="k_line_tab_selected_color">@color/theme</color>
+    <color name="k_line_tab_unselected_color">@color/cl_333333</color>
+    <color name="k_line_divider_line">@color/cl_eaeaea</color>
+    <color name="k_line_divider_line2">@color/cl_eaeaea</color>
+    <color name="deep_amount_color">@color/cl_333333</color>
+    <color name="dialog_bg_color">@color/white</color>
+    <color name="dialog_text_color">@color/cl_333333</color>
+
+
+</resources>

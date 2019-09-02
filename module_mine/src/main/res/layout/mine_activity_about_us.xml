@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolbarStyle">
+
+        <TextView
+            style="@style/ToolbarCenterTitle"
+            android:text="@string/mine_about_us" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <View style="@style/Divider" />
+
+    <!--<ImageView-->
+        <!--android:layout_width="62dp"-->
+        <!--android:layout_height="62dp"-->
+        <!--android:layout_marginTop="35dp"-->
+        <!--android:background="@drawable/bg_token_bank_logo_shape"-->
+        <!--android:padding="10dp" />-->
+
+    <ImageView
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/mine_logo_about_us"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:text="@string/mine_etf_exchange"
+        android:textColor="@color/color_common_text33"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_version_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/color_common_text99"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <View style="@style/Divider" />
+
+        <!--使用协议-->
+        <TextView
+            android:id="@+id/tv_use_agreement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/icon_arrow_right_gray"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="@string/mine_use_agreement"
+            android:textColor="@color/cl_212121"
+            android:textSize="15sp" />
+
+        <View style="@style/Divider" />
+
+        <!--隐私条款-->
+        <TextView
+            android:id="@+id/tv_privacy_policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/icon_arrow_right_gray"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="@string/mine_privacy_policy"
+            android:textColor="@color/cl_212121"
+            android:textSize="15sp" />
+
+        <View style="@style/Divider" />
+
+        <!--版本日志-->
+        <TextView
+            android:id="@+id/tv_version_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/icon_arrow_right_gray"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="@string/mine_version_log"
+            android:textColor="@color/cl_212121"
+            android:textSize="15sp" />
+
+        <View style="@style/Divider" />
+
+        <!--版本更新-->
+        <TextView
+            android:id="@+id/tv_version_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/icon_arrow_right_gray"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="@string/version_update"
+            android:textColor="@color/cl_212121"
+            android:textSize="15sp" />
+
+        <View style="@style/Divider" />
+
+        <!--官方网站-->
+        <TextView
+            android:id="@+id/tv_official_website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/icon_arrow_right_gray"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="@string/mine_official_website"
+            android:textColor="@color/cl_212121"
+            android:textSize="15sp" />
+
+        <View style="@style/Divider" />
+
+    </LinearLayout>
+
+</LinearLayout>

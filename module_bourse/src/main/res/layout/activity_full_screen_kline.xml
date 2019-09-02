@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.activity.FullScreenKlineActivity">
+
+    <LinearLayout
+        android:background="@color/k_line_bg_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/k_line_title_color"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/cl_f55758"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_transform_coin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/cl_999999"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:gravity="end|center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/high_24h"
+                android:textColor="@color/cl_999999" />
+
+            <TextView
+                android:textSize="10sp"
+                android:id="@+id/tv_high_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/k_line_trade_color"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="@string/low_24h"
+                android:textColor="@color/cl_999999" />
+
+            <TextView
+                android:textSize="10sp"
+                android:id="@+id/tv_low_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/k_line_trade_color"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/k_line_divider_line" />
+
+        <ImageView
+            android:tint="@color/k_line_icon_color"
+            android:id="@+id/iv_finish"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_close" />
+    </LinearLayout>
+
+    <View style="@style/style_gray_line"
+        android:background="@color/k_line_divider_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.icechao.klinelib.view.KLineChartView
+            android:id="@+id/kLineView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:backgroundFillAlpha="55"
+            app:backgroundColor="#555555"
+            app:selectInfoBoxBackgroundColor="@color/k_line_bg_content"
+            app:backgroundFillTopLolor="@color/k_line_bg_content"
+            app:backgroundFillBottomColor="#666666"
+            android:background="@color/k_line_bg_content"
+            tools:ignore="NestedWeights" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/k_line_divider_line" />
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@color/k_line_bg_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/main_chart"
+                android:textColor="@color/dialog_text_color"
+                android:textSize="12sp" />
+
+            <View
+                style="@style/style_gray_line"
+                android:background="@color/k_line_divider_line"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp" />
+
+            <TextView
+                android:id="@+id/tv_ma"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/ma"
+                android:textColor="@color/dialog_text_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_boll"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/boll"
+                android:textColor="@color/dialog_text_color"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/iv_main_visible"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:src="@mipmap/icon_k_line_visible" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/second_chart"
+                android:textColor="@color/dialog_text_color"
+                android:textSize="12sp" />
+
+            <View
+                style="@style/style_gray_line"
+                android:background="@color/k_line_divider_line"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp" />
+
+            <TextView
+                android:id="@+id/tv_macd"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/macd"
+                android:textColor="@color/dialog_text_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_kdj"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/kdj"
+                android:textColor="@color/dialog_text_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_rsi"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/rsi"
+                android:textColor="@color/dialog_text_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_wr"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/wr"
+                android:textColor="@color/dialog_text_color"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/iv_second_visible"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:src="@mipmap/icon_k_line_visible" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/style_gray_line"
+        android:background="@color/k_line_divider_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/k_line_bg_top"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tabIndicatorColor="@color/theme"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorHeight="1dp"
+            app:tabRippleColor="@null"
+            app:tabSelectedTextColor="@color/k_line_tab_selected_color"
+            app:tabTextAppearance="@style/TabLayoutTextStyle3"
+            app:tabTextColor="@color/k_line_tab_unselected_color" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/k_line_divider_line" />
+
+        <ImageView
+            android:id="@+id/iv_k_line_set"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon_k_line_set" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,93 @@
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">module_common</string>
+    <string name="no_record">暂无记录</string>
+    <string name="loading">加载中...</string>
+    <string name="waiting_open">此功能即将上线，敬请期待！</string>
+    <string name="net_connect_error">网络连接异常</string>
+    <string name="net_error_try_again">网络不给力，请重试!</string>
+
+    <string name="take_picture">拍照</string>
+    <string name="my_photo_album">我的相册</string>
+    <string name="confirm">确认</string>
+    <string name="submit">提交</string>
+    <string name="next_step">下一步</string>
+
+    <string name="please_input_login_password">请输入登录密码</string>
+    <string name="input_login_pass_word_error">输入登录密码错误</string>
+    <string name="please_set_pay_password">请先设置支付密码</string>
+    <string name="please_input_pay_password">请输入支付密码</string>
+    <string name="second_check">二次验证</string>
+    <string name="sms_code">短信验证码</string>
+    <string name="email_code">邮箱验证码</string>
+    <string name="google_code">谷歌验证码</string>
+    <string name="please_input">请输入</string>
+    <string name="please_input_address">请输入地址</string>
+    <string name="please_input_note">请输入备注</string>
+    <string name="please_input_sure_sms_code">请输入六位短信验证码</string>
+    <string name="please_input_sure_email_code">请输入六位邮箱验证码</string>
+    <string name="please_input_sure_google_code">请输入六位谷歌验证码</string>
+    <string name="get_code">获取验证码</string>
+    <string name="sure">确定</string>
+    <string name="search">搜索</string>
+    <string name="copy_success_">复制成功:</string>
+    <string name="get_code_again">重新获取</string>
+    <string name="time_tick">剩余%1$s秒</string>
+    <string name="all">全部</string>
+
+    <string name="coin_not_support_recharge">该币种暂不支持充币</string>
+    <string name="coin_not_support_withdraw">该币种暂不支持提币</string>
+    <string name="coin_not_support_coin_coin_deal">该币种暂不支持币币交易</string>
+    <string name="coin_not_support_paris_coin_deal">该币种暂不支持法币交易</string>
+    <string name="number">数量</string>
+    <string name="status">状态</string>
+    <string name="done">已完成</string>
+    <string name="type">类型</string>
+    <string name="copy_address">复制地址</string>
+    <string name="copy">复制</string>
+    <string name="share">分享</string>
+    <string name="download_qr_code">下载二维码</string>
+    <string name="qr_code_error">二维码格式错误</string>
+    <string name="save_success_to">已成功保存到</string>
+
+    <string name="loading_checking">正在检测...</string>
+    <string name="loading_submit">正在提交...</string>
+    <string name="loading_set">正在设置...</string>
+    <string name="loading_upload">正在上传...</string>
+    <string name="loading_send">正在发送...</string>
+    <string name="send_success">发送成功</string>
+    <string name="set_success">设置成功</string>
+    <string name="modify_success">修改成功</string>
+    <string name="submit_success">提交成功</string>
+    <string name="add_success">添加成功</string>
+    <string name="delete_success">删除成功</string>
+    <string name="transfer_success">划转成功</string>
+    <string name="cancel_success">取消成功</string>
+    <string name="confirm_pay_success">确认付款成功</string>
+    <string name="confirm_receive_success">确认收款成功</string>
+    <string name="cancel">取消</string>
+    <string name="other">其他</string>
+    <string name="success">成功</string>
+
+    <string name="share_qq">QQ</string>
+    <string name="share_moments">微信朋友圈</string>
+    <string name="share_wechat">微信好友</string>
+    <string name="share_relegram">Telegram</string>
+    <string name="share_save_picture">保存图片</string>
+    <string name="share_explain_save_img">微信和QQ分享时保存图片</string>
+
+    <string name="please_auth">请先进行实名认证~</string>
+    <string name="no_auth">您还未进行实名认证</string>
+    <string name="go_auth">去认证</string>
+    <string name="no_bind_mobile">您还未进行绑定手机号</string>
+    <string name="go_bind">去绑定</string>
+    <string name="no_set_pay_pwd">您还未设置资金密码</string>
+    <string name="go_set">去设置</string>
+    <string name="please_set_pay_pwd">请先设置支付密码~</string>
+    <string name="no_set_payment">您还未设置收付款方式</string>
+    <string name="no_set_username">您还未设置用户名</string>
+
+    <string name="version_update">"版本更新</string>
+    <string name="update">更新</string>
+    <string name="save_pic">保存原图</string>
+
+</resources>

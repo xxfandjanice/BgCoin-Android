@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_bg_white_8"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="15dp"
+        android:src="@drawable/icon_close" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="@string/second_check"
+        android:textColor="@color/color_common_text33"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/ll_sms_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sms_code"
+                android:textColor="@color/color_common_text33"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_sms_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/please_input"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColor="@color/color_common_text33"
+                android:textColorHint="@color/color_common_text99"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="21dp"
+                android:background="@color/cl_f2f2f2" />
+
+            <TextView
+                android:id="@+id/tv_sms_get_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:maxWidth="120dp"
+                android:minWidth="75dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:text="@string/get_code"
+                android:textColor="@color/theme" />
+
+        </LinearLayout>
+
+        <View style="@style/Divider" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_email_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_code"
+                android:textColor="@color/color_common_text33"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_email_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/please_input"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColor="@color/color_common_text33"
+                android:textColorHint="@color/color_common_text99"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="21dp"
+                android:background="@color/cl_f2f2f2" />
+
+            <TextView
+                android:id="@+id/tv_email_get_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:maxWidth="120dp"
+                android:minWidth="75dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:text="@string/get_code"
+                android:textColor="@color/theme" />
+
+        </LinearLayout>
+
+        <View style="@style/Divider" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_google_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/google_code"
+                android:textColor="@color/color_common_text33"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_google_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/please_input"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColor="@color/color_common_text33"
+                android:textColorHint="@color/color_common_text99"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="21dp"
+                android:background="@color/cl_f2f2f2" />
+
+            <ImageView
+                android:id="@+id/iv_google_code_copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:src="@drawable/ic_copy_dark" />
+
+        </LinearLayout>
+
+        <View style="@style/Divider" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_ok"
+        style="@style/mine_button_style"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="54dp"
+        android:text="@string/sure" />
+
+</LinearLayout>

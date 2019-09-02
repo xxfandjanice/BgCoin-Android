@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_common_bgEE"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolbarStyle">
+
+        <TextView
+            style="@style/ToolbarCenterTitle"
+            android:text="@string/mine_setting_gestures_password" />
+
+        <TextView
+            android:id="@+id/tv_reset_draw"
+            style="@style/ToolbarRightText"
+            android:visibility="gone"
+            android:text="@string/mine_reset_draw"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <com.wangnan.library.GestureLockThumbnailView
+        android:id="@+id/gl_top_view"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="55dp"
+        app:thumbnail_color="#cccccc"
+        app:thumbnail_ratio="0.6" />
+
+    <TextView
+        android:id="@+id/tv_explain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="51dp"
+        android:textColor="@color/color_common_text44"
+        android:textSize="15sp"
+        android:text="@string/mine_gestures_explain" />
+
+    <com.wangnan.library.GestureLockView
+        android:id="@+id/gl_view"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="bottom|center_horizontal"
+        app:error_color="@color/color_common_FFF74D4D"
+        app:is_use_animation="true"
+        app:is_use_vibrate="true"
+        app:line_thickness="1dp"
+        app:normal_color="#B2007AFF"
+        app:press_color="@color/theme" />
+
+</LinearLayout>

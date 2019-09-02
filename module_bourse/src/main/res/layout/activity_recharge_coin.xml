@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolbarStyle">
+
+        <TextView
+            style="@style/ToolbarCenterTitle"
+            android:text="@string/drawer_recharge" />
+
+        <ImageView
+            android:id="@+id/iv_records"
+            style="@style/ToolbarRightImageView"
+            android:src="@drawable/ic_records" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <View style="@style/Divider" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingTop="12dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_common_bgEE"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_coin_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/color_common_text33"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_select_coin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="13dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="13dp"
+                    android:drawableRight="@drawable/icon_arrow_right_gray"
+                    android:drawablePadding="5dp"
+                    android:gravity="right"
+                    android:text="@string/please_select_recharge_coin"
+                    android:textColor="@color/color_common_text99"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_common_bgEE"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="44dp"
+                    android:text="@string/recharge_address"
+                    android:textColor="@color/color_common_text33"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_recharge_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="50dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/color_common_text33"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/bg_qr_code_shape">
+
+                    <ImageView
+                        android:id="@+id/iv_qr_code"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:layout_centerInParent="true" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_copy_address"
+                    android:layout_width="93dp"
+                    android:layout_height="31dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/bg_shape_copy_blue"
+                    android:gravity="center"
+                    android:text="@string/copy_address"
+                    android:textColor="@color/theme"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_download_qr_code"
+                    android:layout_width="93dp"
+                    android:layout_height="31dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_shape_download_gray"
+                    android:gravity="center"
+                    android:text="@string/download_qr_code"
+                    android:textColor="@color/color_common_text99"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_common_text33"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_copy_tag"
+                    android:layout_width="93dp"
+                    android:layout_height="31dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="17dp"
+                    android:background="@drawable/bg_shape_download_gray"
+                    android:gravity="center"
+                    android:text="@string/copy"
+                    android:textColor="@color/color_common_text99"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:drawableLeft="@drawable/ic_warning"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/warning"
+                android:textColor="@color/theme"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_warning_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/color_common_text99"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

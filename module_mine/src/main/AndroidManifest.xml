@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fmtch.mine">
+
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+
+    <application>
+        <activity android:name=".MainActivity"/>
+
+        <activity android:name=".mvp.view.activity.login.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mvp.view.activity.login.ForgetPasswordActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mvp.view.activity.login.RegisterActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mvp.view.activity.login.SelectCountryCode"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".mvp.view.activity.SafeCenterActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".mvp.view.activity.GesturesPwdActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mvp.view.activity.GesturesPwdSettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mvp.view.activity.CheckGesturesPwdActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mvp.view.activity.CheckFingerPwdActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".mvp.view.activity.InviteActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mvp.view.activity.AdviceActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mvp.view.activity.SettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mvp.view.activity.SettingCurrencyUnitActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mvp.view.activity.SettingLanguageActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mvp.view.activity.AboutUsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mvp.view.activity.BindActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mvp.view.activity.BindReleaseActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mvp.view.activity.AuthActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mvp.view.activity.AuthStatusActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mvp.view.activity.SetUserNameActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mvp.view.activity.ModifyLoginPwdActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mvp.view.activity.SetPayPwdActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mvp.view.activity.GoogleCodeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mvp.view.activity.CheckBindGoogleActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mvp.view.activity.VersionLogActivity"
+            android:screenOrientation="portrait"/>
+
+
+        <activity
+            android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/mine_customTheme" />
+
+        <activity
+            android:name="me.iwf.photopicker.PhotoPagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+    </application>
+
+</manifest>

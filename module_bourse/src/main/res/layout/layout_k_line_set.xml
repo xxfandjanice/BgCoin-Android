@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="20dp"
+    android:background="@color/dialog_bg_color"
+    app:cardBackgroundColor="@color/dialog_bg_color"
+    app:cardCornerRadius="1dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_main_chart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/main_chart"
+                android:textColor="@color/dialog_text_color"
+                android:textSize="13sp" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="1px"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/tv_main_chart"
+                android:background="@color/k_line_divider_line" />
+
+            <TextView
+                android:id="@+id/tv_ma"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:layout_toEndOf="@id/line"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/ma"
+                android:textColor="@color/dialog_text_color"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_boll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/tv_ma"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/boll"
+                android:textColor="@color/dialog_text_color"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/iv_main_visible"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:src="@mipmap/icon_k_line_visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_second_chart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:gravity="center_vertical"
+                android:text="@string/second_chart"
+                android:textColor="@color/dialog_text_color"
+                android:textSize="13sp" />
+
+            <View
+                android:id="@+id/line_second"
+                android:layout_width="1px"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/tv_second_chart"
+                android:background="@color/k_line_divider_line" />
+
+            <TextView
+                android:id="@+id/tv_macd"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/line_second"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/macd"
+                android:textColor="@color/dialog_text_color"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_kdj"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/tv_macd"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/kdj"
+                android:textColor="@color/dialog_text_color"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_rsi"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/tv_kdj"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/rsi"
+                android:textColor="@color/dialog_text_color"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_wr"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/tv_rsi"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/wr"
+                android:textColor="@color/dialog_text_color"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/iv_second_visible"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:src="@mipmap/icon_k_line_visible" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

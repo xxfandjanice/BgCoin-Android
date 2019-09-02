@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_shape"
+    android:orientation="vertical">
+
+    <View style="@style/Divider" />
+
+    <TextView
+        android:id="@+id/tv_item"
+        style="@style/PopWindowTextStyle"
+        android:textColor="@color/color_common_text99" />
+
+    <View style="@style/Divider" />
+</LinearLayout>

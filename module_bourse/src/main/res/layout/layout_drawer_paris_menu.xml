@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/drawer_paris_menu_close"
+            android:layout_alignParentEnd="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:scaleType="center"
+            android:src="@mipmap/icon_trade_drawer_close" />
+    </RelativeLayout>
+    
+    <TextView
+        android:paddingStart="30dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/cl_333333"
+        android:textSize="16sp"
+        android:id="@+id/drawer_paris_menu_delegation"
+        android:text="@string/delegation_order"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+    <TextView
+        android:textColor="@color/cl_333333"
+        android:textSize="16sp"
+        android:id="@+id/drawer_paris_menu_my_order"
+        android:paddingStart="30dp"
+        android:gravity="center_vertical"
+        android:text="@string/my_order"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <TextView
+        android:textColor="@color/cl_333333"
+        android:textSize="16sp"
+        android:id="@+id/drawer_paris_menu_pay_receive"
+        android:paddingStart="30dp"
+        android:gravity="center_vertical"
+        android:text="@string/set_pay_receive"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <TextView
+        android:layout_marginEnd="25dp"
+        android:textColor="@color/cl_333333"
+        android:textSize="16sp"
+        android:id="@+id/drawer_paris_menu_transform"
+        android:paddingStart="30dp"
+        android:gravity="center_vertical"
+        android:text="@string/transform_money"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <TextView
+        android:layout_marginEnd="25dp"
+        android:textColor="@color/cl_333333"
+        android:textSize="16sp"
+        android:id="@+id/drawer_paris_menu_blacklist"
+        android:paddingStart="30dp"
+        android:gravity="center_vertical"
+        android:text="@string/blacklist_attention"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+</LinearLayout>

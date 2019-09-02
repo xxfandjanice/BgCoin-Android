@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ETF-Android.iml" filepath="$PROJECT_DIR$/ETF-Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/imagepicker/imagepicker.iml" filepath="$PROJECT_DIR$/library/imagepicker/imagepicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/klinelib/klinelib.iml" filepath="$PROJECT_DIR$/library/klinelib/klinelib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_bourse/module_bourse.iml" filepath="$PROJECT_DIR$/module_bourse/module_bourse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_common/module_common.iml" filepath="$PROJECT_DIR$/module_common/module_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_mine/module_mine.iml" filepath="$PROJECT_DIR$/module_mine/module_mine.iml" />
+    </modules>
+  </component>
+</project>

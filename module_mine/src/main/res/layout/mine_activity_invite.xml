@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolbarStyle">
+
+        <TextView
+            style="@style/ToolbarCenterTitle"
+            android:text="@string/mine_invite_friend" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <View style="@style/Divider"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:scaleType="fitXY"
+            android:src="@drawable/mine_bg_invite" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:paddingBottom="45dp">
+
+            <View style="@style/Divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="25dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine_invite_code_"
+                    android:textColor="@color/color_common_text99"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_invite_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/theme"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cl_19007aff"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="2dp"
+                    android:text="@string/copy"
+                    android:textColor="@color/theme"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <View style="@style/Divider" />
+
+            <TextView
+                android:id="@+id/tv_invite_friends"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="38dp"
+                android:background="@color/theme"
+                android:gravity="center"
+                android:text="@string/mine_invite_friends_now"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_share_pic"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="38dp"
+                android:background="@color/cl_8fa0b0"
+                android:gravity="center"
+                android:text="@string/mine_invite_your_own_pic"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

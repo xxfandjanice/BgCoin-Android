@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+
+    </style>
+
+
+    <style name="mine_actionBarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">#fff</item>
+        <item name="actionBarSize">56dip</item>
+    </style>
+
+    <style name="mine_customTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--不要修改titleTextColor属性名字-->
+        <item name="titleTextColor">#ffffff</item>
+        <item name="actionBarTheme">@style/mine_actionBarTheme</item>
+        <!-- 设置图片选择界面标题栏以及底栏颜色 -->
+        <item name="colorPrimary">#38393E</item>
+        <!--设置图片选择界面状态栏颜色-->
+        <item name="colorPrimaryDark">#2F3034</item>
+        <item name="actionBarSize">56dip</item>
+    </style>
+
+</resources>

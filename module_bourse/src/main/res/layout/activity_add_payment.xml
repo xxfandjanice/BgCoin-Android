@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_common_bgEE"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolbarStyle">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/ToolbarCenterTitle" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cl_fefcec"
+        android:lineSpacingExtra="5dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:text="@string/add_payment_explain"
+        android:textColor="@color/cl_fa8006"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="@string/belong_coin_type"
+            android:textColor="@color/color_common_text33"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/icon_arrow_right_gray"
+            android:drawablePadding="10dp"
+            android:gravity="right|center_vertical"
+            android:text="CNY"
+            android:textColor="@color/color_common_text33"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            style="@style/Divider"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/name_"
+                android:textColor="@color/color_common_text33"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_true_name_bank"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="@string/please_input_true_name"
+                android:padding="15dp"
+                android:textColor="@color/color_common_text33"
+                android:textColorHint="@color/color_common_text99"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/Divider"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/bank_card_no"
+                android:textColor="@color/color_common_text33"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_bank_card_no"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:gravity="right|center_vertical"
+                android:hint="@string/please_input_bank_card_no"
+                android:padding="15dp"
+                android:textColor="@color/color_common_text33"
+                android:textColorHint="@color/color_common_text99"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/Divider"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/create_bank"
+                android:textColor="@color/color_common_text33"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_create_bank"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="@string/please_input_create_bank"
+                android:padding="15dp"
+                android:textColor="@color/color_common_text33"
+                android:textColorHint="@color/color_common_text99"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/Divider"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/create_bank_branch"
+                android:textColor="@color/color_common_text33"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_create_bank_branch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="@string/input_select"
+                android:padding="15dp"
+                android:textColor="@color/color_common_text33"
+                android:textColorHint="@color/color_common_text99"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_zfb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            style="@style/Divider"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/true_name"
+                android:textColor="@color/color_common_text33"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_true_name_zfb"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="@string/please_input_true_name"
+                android:padding="15dp"
+                android:textColor="@color/color_common_text33"
+                android:textColorHint="@color/color_common_text99"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/Divider"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/zfb_account"
+                android:textColor="@color/color_common_text33"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_zfb_account"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="@string/please_input_zfb_account"
+                android:padding="15dp"
+                android:textColor="@color/color_common_text33"
+                android:textColorHint="@color/color_common_text99"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/Divider"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_wechat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            style="@style/Divider"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/wechat_nick"
+                android:textColor="@color/color_common_text33"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_wechat_nick"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="@string/please_input_wechat_nick"
+                android:padding="15dp"
+                android:textColor="@color/color_common_text33"
+                android:textColorHint="@color/color_common_text99"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/Divider"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/wechat_account"
+                android:textColor="@color/color_common_text33"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_wechat_account"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="@string/please_input_wechat_account"
+                android:padding="15dp"
+                android:textColor="@color/color_common_text33"
+                android:textColorHint="@color/color_common_text99"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/Divider"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="@string/sms_verification"
+            android:textColor="@color/color_common_text33"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="@string/please_input_sms_code"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColor="@color/color_common_text33"
+            android:textColorHint="@color/color_common_text99"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="21dp"
+            android:background="@color/cl_f2f2f2" />
+
+        <TextView
+            android:id="@+id/tv_get_code"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:maxWidth="120dp"
+            android:minWidth="75dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:text="@string/get_code"
+            android:textColor="@color/theme" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_receive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_receive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:text="@string/zfb_receive_qr_code"
+            android:textColor="@color/color_common_text33"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_receive"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/shape_xx_rectangle_blue">
+
+            <TextView
+                android:id="@+id/tv_upload_receive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/icon_upload_qr_code"
+                android:drawablePadding="5dp"
+                android:text="@string/upload_zfb_receive_qr_code"
+                android:textColor="@color/theme"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/iv_receive_qr_code"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_bind"
+        style="@style/mine_button_style"
+        android:layout_marginBottom="60dp"
+        android:enabled="false"
+        android:text="@string/bind" />
+
+</LinearLayout>

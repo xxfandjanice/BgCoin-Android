@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_filter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="币种"
+        android:textColor="@color/cl_333333"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/iv_filter"
+        android:layout_marginStart="3dp"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/icon_filter_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

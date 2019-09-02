@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ui.trade.activity.PublishDelegationOrderActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolbarStyle">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/ToolbarCenterTitle"
+            android:text="@string/publish_delegation_order" />
+
+        <TextView
+            android:id="@+id/tv_market_price"
+            style="@style/ToolbarRightText" />
+    </android.support.v7.widget.Toolbar>
+
+    <View style="@style/style_gray_line" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        app:tabBackground="@color/white"
+        app:tabIndicatorColor="@color/theme"
+        app:tabIndicatorFullWidth="false"
+        app:tabRippleColor="@null"
+        app:tabSelectedTextColor="@color/theme"
+        app:tabTextAppearance="@style/TabLayoutTextStyle2"
+        app:tabTextColor="@color/cl_333333" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:paddingEnd="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price"
+                    android:textColor="@color/cl_999999"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_Handicap_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/Handicap_price"
+                    android:textColor="@color/cl_333333"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:paddingEnd="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pricing_type"
+                    android:textColor="@color/cl_333333"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_pricing_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="1"
+                    android:text="@string/fixed_price"
+                    android:textColor="@color/cl_333333"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/iv_pricing_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:src="@drawable/icon_arrow_down_gray" />
+            </LinearLayout>
+
+            <View style="@style/style_gray_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_change_rate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:paddingEnd="@dimen/activity_horizontal_margin"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/change_rate"
+                    android:textColor="@color/cl_333333"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_change_rate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/hint_change_rate"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/cl_333333"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="%" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider_change_rate"
+                style="@style/style_gray_line"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:paddingEnd="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/tv_transaction_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transaction_price"
+                    android:textColor="@color/cl_333333"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_transaction_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="35dp"
+                    android:background="@null"
+                    android:hint="@string/please_input_transaction_price"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/cl_333333"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:text="@string/transaction_amount"
+                android:textColor="@color/cl_999999"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:paddingEnd="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/amount"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/amount_coin"
+                    android:textColor="@color/cl_333333"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/please_input_buy_amount"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/cl_333333"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_amount_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:text="@string/all"
+                    android:textColor="@color/theme"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View style="@style/style_gray_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:paddingEnd="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_unit"
+                    android:textColor="@color/cl_999999"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/et_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:background="@null"
+                    android:text="@string/input_price_limit"
+                    android:textColor="@color/cl_c4c8d0"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:paddingEnd="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/competitor_limit"
+                    android:textColor="@color/cl_999999"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/iv_competitor_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:src="@drawable/icon_arrow_down_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pay_spend_time"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:paddingEnd="@dimen/activity_horizontal_margin"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pay_spend_time"
+                    android:textColor="@color/cl_333333"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_pay_spend_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="1"
+                    android:text="@string/pay_10_min"
+                    android:textColor="@color/cl_333333"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/iv_pay_spend_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:src="@drawable/icon_arrow_down_gray" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider_pay_spend_time"
+                style="@style/style_gray_line"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_competitor_limit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/ll_auth_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/activity_horizontal_margin"
+                    android:paddingEnd="@dimen/activity_horizontal_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/auth_level"
+                        android:textColor="@color/cl_333333"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_auth_level"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
+                        android:layout_weight="1"
+                        android:text="@string/auth_level_KYC1"
+                        android:textColor="@color/cl_333333"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_auth_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:src="@drawable/icon_arrow_down_gray" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divider_auth_level"
+                    style="@style/style_gray_line" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/ll_register_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/activity_horizontal_margin"
+                    android:paddingEnd="@dimen/activity_horizontal_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/register_time"
+                        android:textColor="@color/cl_333333"
+                        android:textSize="15sp" />
+
+                    <com.fmtch.base.widget.ClearEditText
+                        android:id="@+id/tv_register_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:focusable="false"
+                        android:text="@string/please_choose"
+                        android:textColor="@color/cl_999999"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_register_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:src="@drawable/icon_arrow_down_gray" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divider_register_time"
+                    style="@style/style_gray_line" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/ll_transaction_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/activity_horizontal_margin"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="@dimen/activity_horizontal_margin"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/transaction_description"
+                        android:textColor="@color/cl_333333"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/et_transaction_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="35dp"
+                        android:background="@null"
+                        android:gravity="top"
+                        android:hint="@string/hint_description_want_buy"
+                        android:lineSpacingExtra="5dp"
+                        android:textColor="@color/cl_333333"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_publish"
+        style="@style/mine_button_style"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:enabled="false"
+        android:text="@string/publish_delegation_order_txt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/tv_security_deposit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/security_deposit"
+            android:textColor="@color/cl_999999"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_service_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/service_fee"
+            android:textColor="@color/cl_999999"
+            android:textSize="13sp" />
+    </LinearLayout>
+</LinearLayout>

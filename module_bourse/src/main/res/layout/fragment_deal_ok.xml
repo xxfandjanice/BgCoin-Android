@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/k_line_bg_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="@string/time"
+            android:textColor="@color/cl_999999"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_marginStart="40dp"
+            android:id="@+id/tv_orientation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/orientation"
+            android:textColor="@color/cl_999999"
+            android:textSize="10sp" />
+
+        <TextView
+            android:gravity="end"
+            android:layout_weight="1"
+            android:id="@+id/tv_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/price_bracket"
+            android:textColor="@color/cl_999999"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_amounts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/num_bracket"
+            android:textColor="@color/cl_999999"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

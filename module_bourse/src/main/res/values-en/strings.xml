@@ -1,0 +1,591 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">module_bourse</string>
+    <string name="main_home">Home</string>
+    <string name="main_market">Quotes</string>
+    <string name="main_trade">Transaction</string>
+    <string name="main_mine">Mine</string>
+    <string name="main_property">Assets</string>
+    <string name="search_hint">Search currency</string>
+    <string name="name">name</string>
+    <string name="last_prices">Latest price</string>
+    <string name="last_prices_cny_usd">Latest price(%1$s)</string>
+    <string name="rise_fall">Quote change(24h)</string>
+    <string name="rise_fall_list">Rising list</string>
+    <string name="transaction_list">Trading list</string>
+    <string name="new_coin_list">New currency list</string>
+    <string name="drawer_recharge">Coin</string>
+    <string name="drawer_draw_coin">Coin</string>
+    <string name="drawer_transform">Transfer</string>
+    <string name="invite_friends">invite friends</string>
+    <string name="set">Setting</string>
+    <string name="problem_feedback">feedback</string>
+    <string name="about">about us</string>
+    <string name="safety_center">Security center</string>
+    <string name="bulish">See more</string>
+    <string name="Bearish">Look at the air</string>
+    <string name="search_market_hint">Search for currencies of interest</string>
+    <string name="paris_coin">Legal currency</string>
+    <string name="coin_coin">Coin</string>
+    <string name="buy_in">Buy</string>
+    <string name="sell_out">Sell</string>
+    <string name="limit_price_buy">Limit buy</string>
+    <string name="login_register">log in/Register</string>
+    <string name="login_now">log in immediately</string>
+    <string name="revoke_all">All withdrawals</string>
+    <string name="buy">buy</string>
+    <string name="revoke">Withdrawal</string>
+    <string name="delegation_price">Commission price</string>
+    <string name="trade_amounts">Volume</string>
+    <string name="delegation_amounts">Amount of commission</string>
+    <string name="transform_money">Transfer of funds</string>
+    <string name="my_pend_order">My pending order</string>
+    <string name="history_delegation">Historical commission</string>
+    <string name="bill">Bill</string>
+    <string name="my_wallet">My purse</string>
+    <string name="coin_coin_account">Coin account</string>
+    <string name="paris_coin_account">Legal currency account</string>
+    <string name="propterty_detail">Asset breakdown</string>
+    <string name="hide_few_coin_kind">Hide small currency</string>
+    <string name="one_again_exit">Press again to exit</string>
+    <string name="operation">operating</string>
+    <string name="available">Available</string>
+    <string name="freeze">freeze</string>
+    <string name="converter_coin_cny">Equivalent CNY</string>
+    <string name="converter_coin_usd">Equivalent USD</string>
+    <string name="total_account_assets">Total account assets（BTC）</string>
+    <string name="account_total_money_rate">Wallet total assets（BTC）</string>
+    <string name="coin_total_money_rate">Coin total assets（BTC）</string>
+    <string name="paris_total_money_rate">Legal currency total assets（BTC）</string>
+    <string name="choose_coin">Select currency</string>
+    <string name="search">search for</string>
+    <string name="trade_rise_fall_distribution">Trading against fluctuations</string>
+    <string name="coin_kind">Currency</string>
+    <string name="num_bracket">Quantity(%1$s)</string>
+    <string name="price_bracket">price(%1$s)</string>
+    <string name="sell">sell</string>
+    <string name="time">time</string>
+    <string name="orientation">direction</string>
+    <string name="crowd_funding_price">Crowdfunding price</string>
+    <string name="white_book">white paper</string>
+    <string name="official_website">Official website</string>
+    <string name="block_chain_query">Block query</string>
+    <string name="introduce">Introduction</string>
+    <string name="trade_amount">Volume %1$s</string>
+    <string name="filter">filter</string>
+    <string name="reset">Reset</string>
+    <string name="to">to</string>
+    <string name="financial_records">Financial record</string>
+    <string name="amount">Quantity</string>
+    <string name="state">status</string>
+    <string name="cancel">cancel</string>
+    <string name="system">system</string>
+    <string name="turn_into">Transfer</string>
+    <string name="roll_out">Transfer out</string>
+
+    <string name="add_coin_address">Add%address</string>
+    <string name="add_address">Add address</string>
+    <string name="note">Remarks</string>
+    <string name="tag_explain">label（Filling in errors may result in loss of assets, please note）</string>
+    <string name="input_or_copy_tag">Enter or long press the paste label</string>
+    <string name="address_note">Optional</string>
+    <string name="now_withdraw_num">Currently available %1$s %2$s</string>
+    <string name="withdraw_explain_1">Support amount：lowest%1$s %2$s</string>
+    <string name="withdraw_explain_2">Cash withdrawal fee：%1$s %2$s，See details </string>
+    <string name="max_can_transfer_num">Up to turn %1$s %2$s</string>
+    <string name="address_note_hint">Remarks</string>
+    <string name="coin_address">%1$s address</string>
+    <string name="transfer_coin">Transfer of funds</string>
+    <string name="bring_coin_records">Money record</string>
+    <string name="recharge_coin_records">Currency record</string>
+    <string name="transfer_coin_records">Fund transfer record</string>
+    <string name="please_select_recharge_coin">Please select a recharge currency</string>
+    <string name="please_input_withdraw_num">Please enter the number of coins</string>
+    <string name="please_input_transfer_num">Please enter the number of transfers</string>
+    <string name="recharge_address">Recharge address</string>
+    <string name="address">address</string>
+    <string name="warning">Precautions:</string>
+    <string name="bring_address">Coin address</string>
+    <string name="input_or_copy_address">Enter or long press the paste address</string>
+    <string name="bring_num">Number of coins</string>
+    <string name="total">All</string>
+    <string name="fee">Handling fee</string>
+    <string name="fee_detail">Rate details</string>
+    <string name="from">From</string>
+    <string name="to_">To</string>
+    <string name="coin_type">Currency</string>
+    <string name="transfer_num">Number of transfers</string>
+    <string name="sure_transfer">Confirm transfer</string>
+    <string name="trade_id">Blockchain transaction ID</string>
+    <string name="trade">transaction</string>
+    <string name="search_tip">Enter search content</string>
+    <string name="add_my_choose_success">Add optional success</string>
+    <string name="deep">depth</string>
+    <string name="deal_ok">Transaction</string>
+    <string name="sell_out_coin">sell%1$s</string>
+    <string name="buy_in_coin">buy%1$s</string>
+    <string name="valuation">Valuation %1$s</string>
+    <string name="amount_coin">Quantity(%1$s)</string>
+    <string name="money_coin">Amount(%1$s)</string>
+    <string name="see_all">view all</string>
+    <string name="cancel_order_success">Successful withdrawal</string>
+    <string name="cancel_all_order_success">All withdrawals were successful</string>
+    <string name="temporary_no_order">Temporary price list</string>
+    <string name="dialog_tip_cancel_single_order">Whether to cancel this order?</string>
+    <string name="dialog_tip_cancel_all_order">Whether to cancel all orders?</string>
+    <string name="limit_price_sell">Sell at a limit price</string>
+    <string name="market_fast_buy">Quick buy in the market</string>
+    <string name="market_fast_sell">Market sells quickly</string>
+    <string name="entrust_plan">Plan commission</string>
+    <string name="entrust_folow">Tracking commission</string>
+    <string name="entrust_ice">Iceberg commission</string>
+    <string name="entrust_time">Time-weighted delegation</string>
+    <string name="limit_price_order">Limit order</string>
+    <string name="market_price_order">Market order</string>
+    <string name="market_order_tip">Trade at the current best price</string>
+    <string name="input_limit_price">Please enter the price</string>
+    <string name="min_total">Lowest price %1$s</string>
+    <string name="limit_order_buy_in">Limit order buy</string>
+    <string name="create_order_price">price&#160;&#160;&#160;&#160;&#160;&#160;%1$s %2$s</string>
+    <string name="create_order_amount">Quantity&#160;&#160;&#160;&#160;&#160;&#160;%1$s %2$s</string>
+    <string name="create_order_money">Amount&#160;&#160;&#160;&#160;&#160;&#160;%1$s %2$s</string>
+    <string name="no_more_remind">No longer reminder next time</string>
+    <string name="creat_order_success">Create order successfully</string>
+    <string name="zero">0.00</string>
+    <string name="input_amount">Please enter the quantity</string>
+    <string name="input_money">Please enter the amount</string>
+    <string name="more">More</string>
+    <string name="one_min">1 minute</string>
+    <string name="five_min">5 minute</string>
+    <string name="thirty_min">30 minute</string>
+    <string name="one_week">1 week</string>
+
+    <string name="assets_percent">Position distribution</string>
+    <string name="high_24h">Maximum amount(24h)</string>
+    <string name="low_24h">Minimum amount(24h)</string>
+    <string name="main_chart">Main picture</string>
+    <string name="second_chart">Secondary map</string>
+    <string name="ma">MA</string>
+    <string name="boll">BOLL</string>
+    <string name="macd">MACD</string>
+    <string name="kdj">KDJ</string>
+    <string name="rsi">RSI</string>
+    <string name="wr">WR</string>
+    <string name="trade_price">24H turnover(%1$s)</string>
+    <string name="delete_my_choose_success">Canceled self-selection</string>
+    <string name="trade_total">Total turnover</string>
+    <string name="trade_average_price">Average transaction price</string>
+    <string name="revoked">Withdrawn</string>
+    <string name="traded">Deal done</string>
+    <string name="traded_amount">Volume</string>
+    <string name="market_name">/%1$s</string>
+    <string name="please_login">please log in first</string>
+    <string name="can_not_forecase_too">Cannot repeat prediction</string>
+    <string name="out_account">Billing account</string>
+    <string name="in_account">Account entry account</string>
+    <string name="transform_detail">Fund transfer details</string>
+    <string name="recharge_detail">Coin details</string>
+    <string name="draw_detail">Coin details</string>
+    <string name="sure_ing">confirming</string>
+    <string name="done">completed</string>
+    <string name="checking">under review</string>
+    <string name="canceled_">Revoked</string>
+    <string name="deal_ing">Revoked</string>
+    <string name="please_input_price">Please enter the price</string>
+    <string name="please_input_price_more_zero">The price cannot be zero</string>
+    <string name="available_money">Available %1$s</string>
+    <string name="no_set_trade_pwd">No transaction password set</string>
+    <string name="go_set">Go to set</string>
+    <string name="min_amount">minimum amount %1$s</string>
+    <string name="min_money">Minimum amount %1$s</string>
+    <string name="event_gift">system</string>
+    <string name="want_to_buy">I want to buy</string>
+    <string name="want_to_sell">I want to sell</string>
+    <string name="paris_coin_trade_amount">Transaction %1$s</string>
+    <string name="paris_coin_trade_rate">Turnover rate %1$s</string>
+    <string name="limit_money">Limit</string>
+    <string name="unit_price">unit price</string>
+    <string name="purchase">buy</string>
+    <string name="sale">sell</string>
+
+    <string name="go_buy">buy</string>
+    <string name="go_sell">sell</string>
+    <string name="paris_buy">buy%1$s</string>
+    <string name="paris_sell">sell%1$s</string>
+    <string name="can_buy_num">Available quantity%1$s</string>
+    <string name="can_sell_num">Available quantity%1$s</string>
+    <string name="paris_account_can_use">French currency account available%1$s</string>
+    <string name="please_input_money">Please enter the amount%1$s</string>
+    <string name="assets_pwd">Fund password</string>
+    <string name="please_input_assets_pwd">Please enter the fund password</string>
+    <string name="register_time">Registration time</string>
+    <string name="auth_level">Certification level</string>
+    <string name="release_coin_time">Time saving</string>
+    <string name="cny">(CNY)</string>
+    <string name="price">price</string>
+    <string name="money">Amount</string>
+    <string name="down_order">place an order</string>
+    <string name="go_to_outline_pay">Go offline payment</string>
+    <string name="wait_other_side_loan">Waiting for the other party to release</string>
+    <string name="wait_other_side_pay">Waiting for payment</string>
+    <string name="wait_other_side_fukuan">Waiting for payment</string>
+    <string name="other_side_payed">The other party has paid</string>
+    <string name="wait_other_side_release_coin">Waiting for the other party to pay</string>
+    <string name="click_already_pay">Click paid</string>
+    <string name="wait_release_coin">Pending money</string>
+    <string name="go_to_release_coin">Go to the currency</string>
+    <string name="cancel_order_explain">Autonomous within 3 minutes</string>
+    <string name="pay_info">payment info</string>
+    <string name="cancel_order">cancel order</string>
+    <string name="cancel_order_dialog_explain">If you cancel the same day, you will freeze the French currency trading function. Do you confirm the cancellation of the order?</string>
+    <string name="think_about_again">Think again</string>
+    <string name="order_num">Order number</string>
+    <string name="wait_pay">pending payment</string>
+        
+    <string name="buyer">buyer</string>
+        
+    <string name="auth_info"> real name information</string>
+        
+    <string name="order_money">order amount (CNY)</string>
+        
+    <string name="order_money_unit">order amount (%1$s)</string>
+        
+    <string name="coin_num">quantity (%1$s)</string>
+        
+    <string name="single_price">Unit price (CNY)</string>
+        
+    <string name="single_price_unit">Unit price (%1$s)</string>
+        
+    <string name="order_time">order time</string>
+        
+    <string name="remark">remarks</string>
+        
+    <string name="pay_way">payment method</string>
+        
+    <string name="trade_warn">transaction reminder</string>
+        
+    <string name="trade_warn_1">Inter-bank remittances with non-working hours greater than 50,000, please pay in batches (less than 5w remittances can arrive in time).</string>
+        
+    <string name="trade_warn_2">Please use the timely payment method, Alipay bank card, 2-hour remittance and other payment methods, resulting in no payment within 1 hour, the seller has the right to return the money.</string>
+        
+    <string name="trade_warn_explain">If you have already transferred money to the seller offline, please be sure to click the "Payment, please deposit" button in the lower right corner, otherwise your funds will be lost.</string>
+        
+    <string name="chat_online">online communication</string>
+        
+    <string name="bank_transfer">bank transfer</string>
+        
+    <string name="zfb_transfer"> Alipay transfer</string>
+        
+    <string name="wechat_transfer">WeChat transfer</string>
+        
+    <string name="receive_bank">receiving bank</string>
+        
+    <string name="receiver">payee </string>
+    <string name="confirm_pay">Confirm payment</string>
+        
+    <string name="pay_amount">payment amount</string>
+        
+    <string name="time_out_cancel">After the timeout is automatically canceled</string>
+        
+    <string name="confirm_pay_explain">If you confirm that you can send money to the other party by offline, you can pay.</string>
+        
+    <string name="already_pay_please_release_coin">paid, please put coins</string>
+        
+    <string name="already_pay_please_release_coin_time">Payment, please put money %1$s</string>
+        
+    <string name="confirm_receive">Confirm payment</string>
+        
+    <string name="time_out_release_coin">after automatic coin deposit</string>
+        
+    <string name="confirm_receive_explain">If you confirm that you receive the remittance from the other party, you can release the currency.</string>
+        
+    <string name="confirm_receive_go_release_coin">Confirm the payment, go to the currency </string>
+        
+    <string name="confirm_receive_go_release_coin_time">Confirm the payment, go to the currency %1$s</string>
+        
+    <string name="time_end_release_coin"> Timeout automatically after %1$s</string>
+        
+    <string name="receive_info">payment information</string>
+        
+    <string name="receive_name">payee name</string>
+        
+    <string name="payment_amount">payment amount</string>
+        
+    <string name="payment_time">payment time</string>
+        
+    <string name="ask_sever">Apply for a complaint</string>
+        
+    <string name="mobile_contact">phone contact</string>
+        
+    <string name="sell_order_warn_explain">Please go to the bank client, Alipay account, WeChat wallet to check the money has been received and then carry out the currency operation, the account SMS can not be used as payment evidence!</string>
+        
+    <string name="deal_done">transaction completed</string>
+        
+    <string name="deal_already_done">transaction has been completed</string>
+        
+    <string name="buyer_cancel">Buyer cancellation</string>
+        
+    <string name="time_out_un_pay_cancel">payment timeout</string>
+        
+    <string name="seller_cancel">Seller Cancel</string>
+        
+    <string name="order_already_cancel">The order has been canceled and the payment information cannot be viewed</string>
+        
+    <string name="true_out">Sell</string>
+        
+    <string name="true_in">realize</string>
+        
+    <string name="release_time">release time</string>
+
+    <string name="clear">clear </string>
+        
+    <string name="complete">complete</string>
+        
+    <string name="min_trade_money">minimum transaction amount</string>
+        
+    <string name="please_input_min_money">Please enter the minimum target amount</string>
+        
+    <string name="payment_method"> collection method</string>
+        
+    <string name="bank_card">bank card</string>
+        
+    <string name="wechat">WeChat</string>
+        
+    <string name="zfb"> Alipay</string>
+        
+    <string name="please_select_payment_method">Please select payment method</string>
+        
+    <string name="empty_payment"> did not add any payment method</string>
+        
+    <string name="go_to_add">Go to add</string>
+        
+    <string name="bind_bank_card">bind real name bank card</string>
+        
+    <string name="set_wechat_pay">Set WeChat Payment</string>
+        
+    <string name="set_zfb">Set Alipay</string>
+        
+    <string name="bind">binding</string>
+        
+    <string name="add_payment_explain">French currency transactions belong to C2C transactions. The funds will not be automatically debited if the funds do not pass through the platform. You need to transfer the funds to the other party manually before the other party can receive the payment.</string>
+        
+    <string name="belong_coin_type">currency</string>
+        
+    <string name="name_">name</string>
+        
+    <string name="please_input_true_name">Please enter your real name</string>
+        
+    <string name="please_input_bank_card_no">Please enter the bank card number</string>
+        
+    <string name="create_bank"> deposit bank</string>
+        
+    <string name="please_input_create_bank">Please enter the meeting bank</string>
+        
+    <string name="create_bank_branch"> account opening branch</string>
+        
+    <string name="input_select">Optional</string>
+        
+    <string name="sms_verification"> SMS verification</string>
+        
+    <string name="please_input_sms_code">Please enter the verification code</string>
+        
+    <string name="true_name">real name</string>
+        
+    <string name="please_input_zfb_account">Please enter Alipay account</string>
+        
+    <string name="wechat_nick">WeChat nickname</string>
+        
+    <string name="please_input_wechat_nick">Please enter the WeChat nickname</string>
+        
+    <string name="please_input_wechat_account">Please enter WeChat account</string>
+        
+    <string name="wechat_receive_qr_code">WeChat receiving code</string>
+        
+    <string name="upload_wechat_receive_qr_code">Upload WeChat receiving code</string>
+        
+    <string name="zfb_receive_qr_code"> Alipay collection code</string>
+        
+    <string name="upload_zfb_receive_qr_code">Upload Alipay receipt code</string>
+        
+    <string name="opened"> is turned on</string>
+        
+    <string name="closed"> is closed</string>
+        
+    <string name="unbind">Unbind</string>
+
+    <string name="bank_card_no">bank card number </string>
+        
+    <string name="bank_belong">subordinate branch </string>
+        
+    <string name="zfb_account"> Alipay account </string>
+        
+    <string name="wechat_account">WeChat account </string>
+        
+    <string name="receive_qr_code">receiving QR code </string>
+        
+    <string name="my_order">My order</string>
+        
+    <string name="set_pay_receive"> payment settings </string>
+        
+    <string name="blacklist_attention">blacklist/attention</string>
+        
+    <string name="delegation_order">order </string>
+        
+    <string name="merchant_home_page">Business Home Page </string>
+        
+    <string name="add_attention">Follow TA</string>
+        
+    <string name="add_attention_tip">Are you pulling the TA off and paying attention to TA? </string>
+        
+    <string name="attention">Follow </string>
+        
+    <string name="has_attention">has been concerned </string>
+        
+    <string name="black_list">blacklist</string>
+        
+    <string name="total_order">total singular number </string>
+        
+    <string name="complete_rate">Completion rate (%) </string>
+        
+    <string name="pay_time">average payment time </string>
+        
+    <string name="put_money_time">average coin time </string>
+        
+    <string name="to_ta_sell">sell to TA</string>
+        
+    <string name="to_ta_buy">Buy to TA</string>
+        
+    <string name="publish_delegation_order">publish order (%1$s/CNY)</string>
+        
+    <string name="Handicap_price"> current market price %1$sCNY</string>
+        
+    <string name="pricing_type"> pricing method </string>
+        
+    <string name="fixed_price">fixed price </string>
+        
+    <string name="transaction_price">transaction price </string>
+        
+    <string name="please_input_transaction_price">Please enter the transaction price </string>
+        
+    <string name="transaction_amount">transaction amount </string>
+        
+    <string name="please_input_buy_amount">Please enter the purchase quantity </string>
+        
+    <string name="please_input_sell_amount">Please enter the quantity sold </string>
+        
+    <string name="price_unit">amount (CNY) </string>
+        
+    <string name="input_price_limit">minimum %1$s, max %2$s</string>
+        
+    <string name="competitor_limit"> opponent limit </string>
+        
+    <string name="please_choose">Please select </string>
+        
+    <string name="transaction_description">transaction description </string>
+        
+    <string name="pay_spend_time">paid time </string>
+        
+    <string name="publish_delegation_order_txt">publish order </string>
+        
+    <string name="security_deposit">buy margin: %1$s%2$s</string>
+        
+    <string name="service_fee"> platform service fee: %1$s</string>
+        
+    <string name="service_fee_txt">platform service fee</string>
+        
+    <string name="hint_description_want_buy">Speed ​​payment after ordering, please put money in time after arrival </string>
+        
+    <string name="hint_description_want_sell">1. After the order is placed, the speed will be paid. After the account is delivered, please release the currency in time. \n2. The currency is locked by the system, please feel free to place an order</string>
+        
+    <string name="change_price">floating price </string>
+        
+    <string name="pay_10_min">Complete payment within 10 minutes</string>
+        
+    <string name="pay_15_min">Complete payment within 15 minutes</string>
+        
+    <string name="pay_20_min">Complete payment within 20 minutes</string>
+        
+    <string name="auth_level_KYC1">KYC1</string>
+        
+    <string name="auth_level_KYC2">KYC2</string>
+        
+    <string name="auth_level_KYC3">KYC3</string>
+        
+    <string name="change_rate">floating scale </string>
+        
+    <string name="hint_change_rate">default 100, minimum %1$s, maximum %2$s</string>
+        
+    <string name="stop_all">all pauses</string>
+        
+    <string name="stop">pause</string>
+        
+    <string name="getting_order">in order</string>
+        
+    <string name="retract">revoke</string>
+        
+    <string name="has_retract">has been revoked</string>
+        
+    <string name="delegation_order_detail">deal order details</string>
+        
+    <string name="currency_info"> currency exchange information:</string>
+        
+    <string name="delegation_type">delegation type:</string>
+        
+    <string name="delegation_id">delegation number:</string>
+        
+    <string name="delegation_price_unit">trust unit price (CNY)</string>
+        
+    <string name="delegation_amount_success">delegal quantity / volum</string>
+        
+    <string name="delegation_money">trust amount (CNY)</string>
+        
+    <string name="single_order_limit">single limit (CNY)</string>
+        
+    <string name="competitor_identity"> opponent identity</string>
+        
+    <string name="competitor_auth_level"> opponent certification level</string>
+        
+    <string name="paris_coin_order">French order</string>
+        
+    <string name="total_money">total amount</string>
+        
+    <string name="the_remaining_time">remaining %1$s</string>
+        
+    <string name="unfinished">unfinished</string>
+        
+    <string name="finished">completed</string>
+        
+    <string name="canceled"> canceled</string>
+        
+    <string name="release">release</string>
+        
+    <string name="release_black">Undo black</string>
+        
+    <string name="add_black"> pull black TA</string>
+        
+    <string name="are_you_sure_black_he">Are you sure you want to pull the black TA?</string>
+        
+    <string name="add_black_attention_tip">Do you cancel the attention to the TA and pull the black TA?</string>
+        
+    <string name="add_black_tip">Are you sure to pull the black TA?</string>
+        
+    <string name="paris_user_id">French user ID: %1$s</string>
+        
+    <string name="add_black_time">black time: %1$s</string>
+        
+    <string name="tip_sure_buy_paris">Confirm purchase %1$s</string>
+        
+    <string name="sure_cancel_order"> whether to cancel this order</string>
+        
+    <string name="sure_pause_order">whether all pauses</string>
+        
+    <string name="sure_release_order">Whether all orders are received</string>
+        
+    <string name="real_out">Sell</string>
+    <string name="optional">Optional</string>
+    <string name="time_sharing">Time sharing</string>
+    <string name="fifteen_min">15 minute</string>
+    <string name="one_hour">1 hour</string>
+    <string name="four_hour">4 hour</string>
+    <string name="one_day">1 day</string>
+    <string name="trade_amounts_24">Volume(24h)</string>
+</resources>

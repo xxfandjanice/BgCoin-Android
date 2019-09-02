@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_buy_sell"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableEnd="@drawable/icon_arrow_down_gray"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:text="@string/want_to_buy"
+            android:textColor="@color/cl_333333"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:paddingEnd="@dimen/activity_horizontal_margin"
+            android:src="@mipmap/icon_filter" />
+    </RelativeLayout>
+
+    <View style="@style/style_gray_line" />
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:paddingStart="5dp"
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        tl:tl_indicator_color="@color/theme"
+        tl:tl_textSelectColor="@color/theme"
+        tl:tl_textBold="BOTH"
+        tl:tl_textUnselectColor="@color/cl_666666"
+        tl:tl_textsize="15sp"
+        tl:tl_indicator_corner_radius="1.5dp"
+        tl:tl_tab_padding="10dp"
+        tl:tl_indicator_height="3dp"
+        tl:tl_indicator_width="18dp" />
+
+    <View style="@style/style_gray_line" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+</LinearLayout>

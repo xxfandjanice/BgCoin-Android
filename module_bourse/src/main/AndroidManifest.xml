@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fmtch.module_bourse">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application>
+        <activity android:name=".ui.trade.activity.BlacklistAttentionActivity" />
+        <activity android:name=".ui.trade.activity.ParisCoinOrderActivity" />
+        <activity
+            android:name=".ui.trade.activity.DelegationOrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.trade.activity.DelegationOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.trade.activity.PublishDelegationOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.trade.activity.MerchantHomePageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.activity.FullScreenKlineActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.home.activity.SearchCoinActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.property.activity.AccountDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.trade.activity.HistoryDelegationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.trade.activity.MyPendOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.trade.activity.ParisBuyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.trade.activity.ParisBuyOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.trade.activity.ParisSellActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.trade.activity.ParisSellOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.trade.activity.ParisOrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.trade.activity.PaymentSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.trade.activity.AddPaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.activity.KLineActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.activity.RiseFallDistributionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.activity.ChooseCoinActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".Bourse_MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/BackgroundTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.property.activity.RechargeCoinActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.property.activity.BringCoinActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.property.activity.TransferCoinActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.property.activity.TransferRecordsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.property.activity.CoinAddressBookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.property.activity.AddCoinAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.property.activity.TransferDetailActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

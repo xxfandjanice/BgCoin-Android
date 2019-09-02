@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.property.activity.AccountDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/ToolbarStyle">
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/ToolbarCenterTitle"
+                android:text="USDT" />
+
+            <ImageView
+                android:id="@+id/iv_filter"
+                style="@style/ToolbarRightImageView"
+                android:src="@mipmap/icon_filter" />
+        </android.support.v7.widget.Toolbar>
+
+        <View style="@style/style_gray_line" />
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_recharge"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/icon_recharge_coin"
+            android:drawablePadding="-10dp"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:text="@string/drawer_recharge"
+            android:textColor="@color/cl_444444"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/cl_eaeaea" />
+
+        <TextView
+            android:id="@+id/tv_draw_coin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/icon_withdraw_coin"
+            android:drawablePadding="-10dp"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:text="@string/drawer_draw_coin"
+            android:textColor="@color/cl_444444"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/cl_eaeaea" />
+
+        <TextView
+            android:id="@+id/tv_transform"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/icon_transfer"
+            android:drawablePadding="-10dp"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:text="@string/drawer_transform"
+            android:textColor="@color/cl_444444"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_trade"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/tab_trade_select"
+            android:drawablePadding="-10dp"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:text="@string/trade"
+            android:textColor="@color/cl_444444"
+            android:textSize="14sp" />
+    </LinearLayout>
+</FrameLayout>

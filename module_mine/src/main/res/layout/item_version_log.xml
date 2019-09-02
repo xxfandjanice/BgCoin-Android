@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="@string/mine_version_no"
+            android:textColor="@color/color_common_text33"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_version_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:padding="15dp"
+            android:textColor="@color/color_common_text99"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/Divider"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="@string/mine_update_content"
+        android:textColor="@color/color_common_text33"
+        android:textSize="15sp"/>
+
+    <View
+        style="@style/Divider"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_update_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_common_text99"
+        android:padding="15dp"
+        android:lineSpacingExtra="10dp"
+        android:textSize="14sp"/>
+
+    <View
+        style="@style/Divider"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="@string/mine_update_time"
+            android:textColor="@color/color_common_text33"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_update_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:padding="15dp"
+            android:textColor="@color/color_common_text99"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

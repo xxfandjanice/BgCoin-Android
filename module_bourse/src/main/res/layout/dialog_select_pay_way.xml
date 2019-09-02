@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/icon_close_gray"
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        android:text="@string/please_select_payment_method"
+        android:textColor="@color/color_common_text99"
+        android:textSize="16sp" />
+
+    <View style="@style/Divider" />
+
+    <TextView
+        android:id="@+id/tv_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cl_f2f6fb"
+        android:drawableLeft="@drawable/icon_pay_bank_card"
+        android:drawableRight="@drawable/icon_checked"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        android:text="@string/bank_card"
+        android:textColor="@color/color_common_text66"
+        android:textSize="16sp" />
+
+    <View style="@style/Divider" />
+
+    <TextView
+        android:id="@+id/tv_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/icon_pay_zfb"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        android:text="@string/zfb"
+        android:textColor="@color/color_common_text66"
+        android:textSize="16sp" />
+
+    <View style="@style/Divider" />
+
+    <TextView
+        android:id="@+id/tv_third"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/icon_pay_wechat"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        android:text="@string/wechat"
+        android:textColor="@color/color_common_text66"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

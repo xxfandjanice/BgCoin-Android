@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View style="@style/style_status_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:id="@+id/iv_drawer_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingStart="20dp"
+            android:paddingEnd="10dp"
+            android:src="@mipmap/icon_trade_drawer" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_paris_coin"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/sel_paris_coin_tab"
+                android:gravity="center"
+                android:text="@string/paris_coin"
+                android:textColor="@drawable/sel_market_tab_tv"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_coin_coin"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="18dp"
+                android:background="@drawable/sel_paris_coin_tab"
+                android:gravity="center"
+                android:text="@string/coin_coin"
+                android:textColor="@drawable/sel_market_tab_tv"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="20dp"
+            android:src="@mipmap/icon_trade_search" />
+
+    </RelativeLayout>
+
+    <View style="@style/style_gray_line" />
+
+    <com.fmtch.module_bourse.widget.NoScrollViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

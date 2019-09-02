@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ui.trade.activity.ParisCoinOrderActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolbarStyle">
+
+        <TextView
+            style="@style/ToolbarCenterTitle"
+            android:text="@string/paris_coin_order" />
+
+        <ImageView
+            android:id="@+id/iv_message"
+            style="@style/ToolbarRightImageView"
+            android:src="@mipmap/icon_message" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <View style="@style/style_gray_line" />
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        tl:tl_indicator_color="@color/theme"
+        tl:tl_indicator_corner_radius="1.5dp"
+        tl:tl_indicator_height="3dp"
+        tl:tl_indicator_width="18dp"
+        tl:tl_tab_space_equal="true"
+        tl:tl_textSelectColor="@color/theme"
+        tl:tl_textUnselectColor="@color/cl_A6A6A6"
+        tl:tl_textsize="16sp" />
+
+    <View style="@style/style_gray_line" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

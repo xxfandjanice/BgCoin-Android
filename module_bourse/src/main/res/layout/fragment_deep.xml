@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/k_line_bg_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/flag_1"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/buy"
+            android:textColor="@color/cl_999999"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_num_fir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/flag_1"
+            android:text="@string/num_bracket"
+            android:textColor="@color/cl_999999"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/price_bracket"
+            android:textColor="@color/cl_999999"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_num_sec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/flag_2"
+            android:text="@string/num_bracket"
+            android:textColor="@color/cl_999999"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/flag_2"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="@string/sell"
+            android:textColor="@color/cl_999999"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

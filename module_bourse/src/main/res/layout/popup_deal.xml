@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_arrow"
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rec_white"
+        android:divider="@drawable/divider_horizontal_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingTop="8dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="8dp"
+            android:text="@string/limit_price_order"
+            android:textColor="@color/tab_text_select"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingTop="8dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="8dp"
+            android:text="@string/market_price_order"
+            android:textColor="@color/cl_333333"
+            android:textSize="14sp" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_3"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:paddingLeft="15dp"-->
+            <!--android:paddingTop="8dp"-->
+            <!--android:paddingRight="15dp"-->
+            <!--android:paddingBottom="8dp"-->
+            <!--android:text="@string/entrust_plan"-->
+            <!--android:textColor="@color/cl_333333"-->
+            <!--android:textSize="14sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_4"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:paddingLeft="15dp"-->
+            <!--android:paddingTop="8dp"-->
+            <!--android:paddingRight="15dp"-->
+            <!--android:paddingBottom="8dp"-->
+            <!--android:text="@string/entrust_folow"-->
+            <!--android:textColor="@color/cl_333333"-->
+            <!--android:textSize="14sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_5"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:paddingLeft="15dp"-->
+            <!--android:paddingTop="8dp"-->
+            <!--android:paddingRight="15dp"-->
+            <!--android:paddingBottom="8dp"-->
+            <!--android:text="@string/entrust_ice"-->
+            <!--android:textColor="@color/cl_333333"-->
+            <!--android:textSize="14sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_6"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:paddingLeft="15dp"-->
+            <!--android:paddingTop="8dp"-->
+            <!--android:paddingRight="15dp"-->
+            <!--android:paddingBottom="8dp"-->
+            <!--android:text="@string/entrust_time"-->
+            <!--android:textColor="@color/cl_333333"-->
+            <!--android:textSize="14sp" />-->
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //自定义属性名,定义公共属性
+    <attr name="iNum" format="float" />
+    <attr name="iColor" format="color" />
+    <attr name="oNum" format="float" />
+    <attr name="oColor" format="color" />
+    <attr name="Inclination" format="integer" />
+    <attr name="gap" format="integer" />
+
+    //自定义控件的主题样式
+    <declare-styleable name="PercentView">
+        <attr name="iNum" />
+        <attr name="iColor" />
+        <attr name="oNum" />
+        <attr name="oColor" />
+        <attr name="Inclination" />
+        <attr name="gap" />
+    </declare-styleable>
+
+    <declare-styleable name="FilterView">
+        <attr name="textColor" format="color"/>
+        <attr name="titleText" format="string"/>
+        <attr name="textSize" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="IndexBar">
+        <attr name="letterSize" format="dimension" />
+        <attr name="letterColor" format="color" />
+        <attr name="focusLetterColor" format="color" />
+        <attr name="letterSpacingExtra" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="PieView">
+        <attr name="centerTextSize" format="dimension" />
+        <attr name="dataTextSize" format="dimension" />
+        <attr name="centerTextColor" format="color" />
+        <attr name="dataTextColor" format="color" />
+        <attr name="circleWidth" format="dimension" />
+        <attr name="centerText" format="string"/>
+    </declare-styleable>
+
+</resources>

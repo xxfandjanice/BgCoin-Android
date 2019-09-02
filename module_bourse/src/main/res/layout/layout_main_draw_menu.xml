@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_drawer"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ViewStub
+        android:layout="@layout/layout_drawer_coin_coin_menu"
+        android:id="@+id/view_stub_trade_menu"
+        android:layout_width="160dp"
+        android:layout_height="match_parent" />
+
+    <ViewStub
+        android:layout="@layout/layout_drawer_paris_menu"
+        android:id="@+id/view_stub_paris_menu"
+        android:layout_width="160dp"
+        android:layout_height="match_parent" />
+
+    <ViewStub
+        android:layout="@layout/layout_drawer_trade_filter"
+        android:id="@+id/view_stub_trade_filter"
+        android:layout_width="300dp"
+        android:layout_height="match_parent" />
+
+    <ViewStub
+        android:layout="@layout/layout_drawer_mine"
+        android:id="@+id/view_stub_mine"
+        android:layout_width="300dp"
+        android:layout_height="match_parent" />
+</FrameLayout>

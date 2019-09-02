@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#35464e</color>
+    <color name="colorPrimaryDark">#212a2f</color>
+    <color name="colorAccent">@color/theme</color>
+
+    <color name="k_line_bg_top">#282C43</color>
+    <color name="k_line_bg_content">#1D1E33</color>
+    <color name="k_line_icon_color">@color/white</color>
+    <color name="k_line_title_color">@color/white</color>
+    <color name="k_line_trade_color">@color/white</color>
+    <color name="k_line_tab_selected_color">@color/white</color>
+    <color name="k_line_tab_unselected_color">@color/cl_999999</color>
+    <color name="k_line_divider_line">#3C4152</color>
+    <color name="k_line_divider_line2">#212636</color>
+    <color name="deep_amount_color">@color/white</color>
+    <color name="dialog_bg_color">@color/cl_2F344F</color>
+    <color name="dialog_text_color">@color/cl_999999</color>
+
+</resources>

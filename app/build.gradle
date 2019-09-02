@@ -1,0 +1,114 @@
+apply plugin: 'com.android.application'
+apply plugin: 'bugly'
+
+static def releaseTime() {
+    return new Date().format("yyyy-MM-dd")
+}
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId rootProject.ext.android.applicationId
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        flavorDimensions "ETF"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+                includeCompileClasspath false
+            }
+        }
+
+        ndk {
+            abiFilters 'armeabi', 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+    }
+
+    productFlavors {
+        prod {
+            dimension "ETF"
+            applicationId "com.fmtch.bourse"
+            resValue "string", "app_name", "ETF"
+            buildConfigField "String", "ENVIRONMENT", '"http://47.245.52.176"'
+            buildConfigField "String", "ENVIRONMENT_WS", '"ws://ws.etf.top"'
+        }
+        stage {
+            dimension "ETF"
+            applicationId "com.fmtch.bourse.stage"
+            resValue "string", "app_name", "ETF测试版"
+            buildConfigField "String", "ENVIRONMENT", '"http://api.beta.etf.top/"'
+            buildConfigField "String", "ENVIRONMENT_WS", '"ws://47.245.55.101:8000"'
+        }
+        dev {
+            dimension "ETF"
+            applicationId "com.fmtch.bourse.dev"
+            resValue "string", "app_name", "ETF开发版"
+            buildConfigField "String", "ENVIRONMENT", '"http://192.168.2.144:81"'
+            buildConfigField "String", "ENVIRONMENT_WS", '"ws://47.245.55.101:8000"'
+        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("keystore/bourse.jks")
+            storePassword "xrfg123456"
+            keyAlias "xrfg"
+            keyPassword "xrfg123456"
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        incremental = false  //开启增量编译
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+    bugly {
+        appId = "90f236029d"
+        appKey = "1ae9533e-b32f-46e9-8c37-954d572d1eec"
+
+        debug = false
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            // 输出apk名称为ETF_1.0_2018-08-13.apk
+            def fileName = "ETF_${versionName}_${variant.productFlavors[0].name}_${variant.buildType.name}_${releaseTime()}.apk"
+            outputFileName = fileName
+        }
+    }
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation project(':module_bourse')
+    implementation project(':module_common')
+    implementation project(':module_mine')
+    annotationProcessor rootProject.ext.dependencies["arouter_compiler"]
+    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
+}

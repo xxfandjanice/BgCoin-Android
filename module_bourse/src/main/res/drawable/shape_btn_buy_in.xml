@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <corners android:radius="4dp" />
+    <stroke
+        android:width="0.5dp"
+        android:color="@color/btn_blue_stoke_line" />
+    <solid android:color="@color/cl_03c087" />
+
+</shape>

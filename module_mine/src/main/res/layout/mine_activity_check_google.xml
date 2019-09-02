@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolbarStyle">
+
+        <TextView
+            style="@style/ToolbarCenterTitle"
+            android:text="@string/mine_bind_google_personal_check" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <View style="@style/Divider" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="@string/mine_bind_google_personal_check_explain"
+        android:textColor="@color/color_common_text33"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tv_secret_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/color_common_text33"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/bg_qr_code_shape">
+
+        <ImageView
+            android:id="@+id/iv_qr_code"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_copy_key"
+        android:layout_width="93dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_shape_copy_blue"
+        android:gravity="center"
+        android:text="@string/mine_copy_key"
+        android:textColor="@color/theme"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_download_qr_code"
+        android:layout_width="93dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/bg_shape_download_gray"
+        android:gravity="center"
+        android:text="@string/mine_download_qr_code"
+        android:textColor="@color/color_common_text99"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/btn_confirm"
+        style="@style/mine_button_style"
+        android:layout_marginTop="47dp"
+        android:text="@string/next_step" />
+
+</LinearLayout>

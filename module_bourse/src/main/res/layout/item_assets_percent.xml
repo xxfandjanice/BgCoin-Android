@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/shape_rectangle_line_radius_d7d7d7"
+    android:gravity="center_vertical"
+    android:padding="8dp">
+
+    <View
+        android:id="@+id/view_tag"
+        android:layout_width="5dp"
+        android:layout_height="5dp" />
+
+    <TextView
+        android:id="@+id/tv_coin_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textSize="10sp"
+        android:textColor="@color/color_common_text99" />
+
+    <TextView
+        android:id="@+id/tv_percent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:textSize="10sp"
+        android:textColor="@color/color_common_text44" />
+
+</LinearLayout>
